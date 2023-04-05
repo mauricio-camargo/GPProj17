@@ -1,0 +1,79 @@
+object fmInsProj: TfmInsProj
+  Left = 645
+  Height = 430
+  Top = 214
+  Width = 647
+  ActiveControl = Edit1
+  Caption = 'Inserir Projeto'
+  ClientHeight = 430
+  ClientWidth = 647
+  DesignTimePPI = 144
+  OnActivate = FormActivate
+  Position = poScreenCenter
+  LCLVersion = '2.0.12.0'
+  object Label1: TLabel
+    Left = 14
+    Height = 25
+    Top = 5
+    Width = 138
+    Caption = 'Nome do Projeto'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Edit1: TEdit
+    Left = 14
+    Height = 33
+    Top = 38
+    Width = 592
+    MaxLength = 80
+    ParentFont = False
+    TabOrder = 0
+    TextHint = 'Máximo de 80 caracteres'
+  end
+  object Label4: TLabel
+    Left = 14
+    Height = 28
+    Top = 157
+    Width = 591
+    AutoSize = False
+    Caption = 'Pasta para armazenar os arquivos do Projeto'
+    ParentColor = False
+    ParentFont = False
+  end
+  object DE1: TDirectoryEdit
+    Left = 14
+    Height = 33
+    Top = 194
+    Width = 595
+    ShowHidden = False
+    ButtonWidth = 34
+    NumGlyphs = 1
+    MaxLength = 0
+    ParentFont = False
+    TabOrder = 1
+  end
+  object BitBtn1: TBitBtn
+    Left = 176
+    Height = 45
+    Top = 312
+    Width = 130
+    Default = True
+    DefaultCaption = True
+    Kind = bkOK
+    ModalResult = 1
+    ParentFont = False
+    TabOrder = 2
+  end
+  object BitBtn2: TBitBtn
+    Left = 351
+    Height = 45
+    Top = 312
+    Width = 132
+    Cancel = True
+    DefaultCaption = True
+    Kind = bkCancel
+    ModalResult = 2
+    ParentFont = False
+    TabOrder = 3
+  end
+end

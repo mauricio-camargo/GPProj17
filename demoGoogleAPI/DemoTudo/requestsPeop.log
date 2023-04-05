@@ -1,0 +1,701 @@
+--------------------------------------------------------------------------------
+Request : POST https://accounts.google.com/o/oauth2/token
+Headers:
+Content-Type:application/x-www-form-urlencoded
+Body:
+client_id=502080815718-1r1iseasap01bovrrs35rrq9053sfke9.apps.googleusercontent.com&client_secret=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&grant_type=authorization_code&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&code=4%2F1AX4XfWj4P5tBWUnp9Mn4RX-jWXImQ8RKGw-j4kS3Yo0XNORPl758qT9RLWo
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+Pragma: no-cache
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Wed, 27 Apr 2022 17:15:38 GMT
+Content-Type: application/json; charset=utf-8
+Vary: X-Origin
+Vary: Referer
+Server: scaffolding on HTTPServer2
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+  "access_token": "ya29.A0ARrdaM_gy81y66Xy5uwJVKNJIOqis8z4omnKyYsJd51uX9U4gxTa-K0rxo2Z0y_ymJgAeqXWsQvNdjXUSzIOb0BaT5EEbV9wGlAMxPbucjCCDtr2EmJOUunH4Jr43Z7vuQ8FDr88BdQDkQgMMzWC3fd5B8zB",
+  "expires_in": 3599,
+  "refresh_token": "1//0hovzB05MpPsvCgYIARAAGBESNwF-L9IrBC_F3mIpQsof8MObxacNxmqNnpxvBIq8SOdg1FIbuIeNpm9gpKjk1TWh-ZvO2kXDYyE",
+  "scope": "https://www.googleapis.com/auth/contacts",
+  "token_type": "Bearer"
+}
+--------------------------------------------------------------------------------
+Request : GET https://people.googleapis.com/v1/{+resourceName}/connections
+Headers:
+Authorization: Bearer ya29.A0ARrdaM_gy81y66Xy5uwJVKNJIOqis8z4omnKyYsJd51uX9U4gxTa-K0rxo2Z0y_ymJgAeqXWsQvNdjXUSzIOb0BaT5EEbV9wGlAMxPbucjCCDtr2EmJOUunH4Jr43Z7vuQ8FDr88BdQDkQgMMzWC3fd5B8zB
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 404 : Not Found
+Headers:
+Date: Wed, 27 Apr 2022 17:15:39 GMT
+Content-Type: text/html; charset=UTF-8
+Server: ESF
+Content-Length: 1595
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Connection: close
+Body:
+<!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 404 (Not Found)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>404.</b> <ins>That’s an error.</ins>
+  <p>The requested URL <code>/v1/%7B+resourceName%7D/connections</code> was not found on this server.  <ins>That’s all we know.</ins>
+
+--------------------------------------------------------------------------------
+Request : POST https://accounts.google.com/o/oauth2/token
+Headers:
+Content-Type:application/x-www-form-urlencoded
+Body:
+client_id=502080815718-1r1iseasap01bovrrs35rrq9053sfke9.apps.googleusercontent.com&client_secret=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&grant_type=authorization_code&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&code=4%2F1AX4XfWiubp37o7EbnOnR0E4whNukKy5d5DquE70FbuuPAeMpMoTOibyKG3o
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Date: Wed, 27 Apr 2022 17:19:27 GMT
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Content-Type: application/json; charset=utf-8
+Vary: X-Origin
+Vary: Referer
+Server: scaffolding on HTTPServer2
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+  "access_token": "ya29.A0ARrdaM_wLLo3bvnPUibMihq8B4esXkP1fXiPCpSg_OIkZRyd7NnZ77D0K9nYe38pUNrz4MAptFqvkZSBVvL8kGTpEp_USSsb7Mi4QfiQON9T9_YOzkVThg9JtPOP804CaBY7SEtyXuBeHOoec8EMO6DNNj63",
+  "expires_in": 3599,
+  "refresh_token": "1//0he8B-6vpspkTCgYIARAAGBESNwF-L9Ir0Qp_nKAbsuXZOmvod_Mn_tvJdlINHpurQ6fqz2e_QVG3fpN-tt9w9IDkeviqv0eGSIQ",
+  "scope": "https://www.googleapis.com/auth/contacts",
+  "token_type": "Bearer"
+}
+--------------------------------------------------------------------------------
+Request : GET https://people.googleapis.com/v1/{+resourceName}/connections
+Headers:
+Authorization: Bearer ya29.A0ARrdaM_wLLo3bvnPUibMihq8B4esXkP1fXiPCpSg_OIkZRyd7NnZ77D0K9nYe38pUNrz4MAptFqvkZSBVvL8kGTpEp_USSsb7Mi4QfiQON9T9_YOzkVThg9JtPOP804CaBY7SEtyXuBeHOoec8EMO6DNNj63
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 404 : Not Found
+Headers:
+Date: Wed, 27 Apr 2022 17:19:27 GMT
+Content-Type: text/html; charset=UTF-8
+Server: ESF
+Content-Length: 1595
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Connection: close
+Body:
+<!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 404 (Not Found)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>404.</b> <ins>That’s an error.</ins>
+  <p>The requested URL <code>/v1/%7B+resourceName%7D/connections</code> was not found on this server.  <ins>That’s all we know.</ins>
+
+--------------------------------------------------------------------------------
+Request : POST https://accounts.google.com/o/oauth2/token
+Headers:
+Content-Type:application/x-www-form-urlencoded
+Body:
+client_id=502080815718-1r1iseasap01bovrrs35rrq9053sfke9.apps.googleusercontent.com&client_secret=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&grant_type=authorization_code&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&code=4%2F1AX4XfWj3aUqKmlQdHi8vL5uQnsR7pIsji9Uiim_4jAsDY6fCPU8nT2GjCRU
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+Pragma: no-cache
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Date: Thu, 28 Apr 2022 13:39:54 GMT
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Content-Type: application/json; charset=utf-8
+Vary: X-Origin
+Vary: Referer
+Server: scaffolding on HTTPServer2
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+  "access_token": "ya29.A0ARrdaM9_O6b2NfKgK5lQ-9-4KwT9M_pf7C89r836oGwYOWlZ9BAiA7kext7m1od7L2wSG1thcUFpRlHRwTD13NPacy0RFDU7nVUXk1CxldztCvAwDQOl_jdfrav47tsZDKxq0ccWvMwB7ININ92JNg708hKi",
+  "expires_in": 3599,
+  "refresh_token": "1//0hB-XC04sMwBrCgYIARAAGBESNwF-L9Ir15-CsdmanH56gt2mtIcl_e8NFBYrl_wP_7qgBRu72R5mbrDcV05scr28geZY1yLxrR8",
+  "scope": "https://www.googleapis.com/auth/contacts",
+  "token_type": "Bearer"
+}
+--------------------------------------------------------------------------------
+Request : GET https://people.googleapis.com/v1/{+resourceName}/connections
+Headers:
+Authorization: Bearer ya29.A0ARrdaM9_O6b2NfKgK5lQ-9-4KwT9M_pf7C89r836oGwYOWlZ9BAiA7kext7m1od7L2wSG1thcUFpRlHRwTD13NPacy0RFDU7nVUXk1CxldztCvAwDQOl_jdfrav47tsZDKxq0ccWvMwB7ININ92JNg708hKi
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 404 : Not Found
+Headers:
+Date: Thu, 28 Apr 2022 13:39:54 GMT
+Content-Type: text/html; charset=UTF-8
+Server: ESF
+Content-Length: 1595
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Connection: close
+Body:
+<!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 404 (Not Found)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>404.</b> <ins>That’s an error.</ins>
+  <p>The requested URL <code>/v1/%7B+resourceName%7D/connections</code> was not found on this server.  <ins>That’s all we know.</ins>
+
+--------------------------------------------------------------------------------
+Request : POST https://accounts.google.com/o/oauth2/token
+Headers:
+Content-Type:application/x-www-form-urlencoded
+Body:
+client_id=502080815718-1r1iseasap01bovrrs35rrq9053sfke9.apps.googleusercontent.com&client_secret=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&grant_type=authorization_code&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&code=4%2F1AX4XfWjx4BlayIz1bJuiXGm9LRfZ1jZ8FfzrB3WXUk-xFr7gIqP4ObPkb8Q
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Date: Thu, 28 Apr 2022 13:40:44 GMT
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Content-Type: application/json; charset=utf-8
+Vary: X-Origin
+Vary: Referer
+Server: scaffolding on HTTPServer2
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+  "access_token": "ya29.A0ARrdaM_uLWXMvAXu14ZTl0ypMfiq5xyn6JO4U0QsHQYfysAEBY4a7EUXPjNjo-sY1C-XZsGm7VgBfnriIMZCfUMlXL6aBOk5iz_82u84xHPhoChORG7OHz2ddJRQLKj4oiXJA33Wd9CzhBH1bsHmypCqxGbG",
+  "expires_in": 3599,
+  "refresh_token": "1//0hhKM7dVA6xeaCgYIARAAGBESNwF-L9IrKr5vebAQ9VfkZUFQG7wOhlCJreaD_hB1PHdq9CliW_7-U6HBhZm0IcneemZM26NZN5c",
+  "scope": "https://www.googleapis.com/auth/contacts",
+  "token_type": "Bearer"
+}
+--------------------------------------------------------------------------------
+Request : GET https://people.googleapis.com/v1/{+resourceName}/connections
+Headers:
+Authorization: Bearer ya29.A0ARrdaM_uLWXMvAXu14ZTl0ypMfiq5xyn6JO4U0QsHQYfysAEBY4a7EUXPjNjo-sY1C-XZsGm7VgBfnriIMZCfUMlXL6aBOk5iz_82u84xHPhoChORG7OHz2ddJRQLKj4oiXJA33Wd9CzhBH1bsHmypCqxGbG
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 404 : Not Found
+Headers:
+Date: Thu, 28 Apr 2022 13:40:44 GMT
+Content-Type: text/html; charset=UTF-8
+Server: ESF
+Content-Length: 1595
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Connection: close
+Body:
+<!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 404 (Not Found)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>404.</b> <ins>That’s an error.</ins>
+  <p>The requested URL <code>/v1/%7B+resourceName%7D/connections</code> was not found on this server.  <ins>That’s all we know.</ins>
+
+--------------------------------------------------------------------------------
+Request : POST https://accounts.google.com/o/oauth2/token
+Headers:
+Content-Type:application/x-www-form-urlencoded
+Body:
+client_id=502080815718-1r1iseasap01bovrrs35rrq9053sfke9.apps.googleusercontent.com&client_secret=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&grant_type=authorization_code&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&code=4%2F1AX4XfWilPQ_66p-a2thruBKuRJpoaH8ojsMc8MbFamhJxCtkCuWjpznxMqQ
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+Pragma: no-cache
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Date: Thu, 28 Apr 2022 13:45:49 GMT
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Content-Type: application/json; charset=utf-8
+Vary: X-Origin
+Vary: Referer
+Server: scaffolding on HTTPServer2
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+  "access_token": "ya29.A0ARrdaM-ya0iV9m816tIcWv4NN9FcmJ7gAtdW3oWJej9YIzbXepdESnldMed8gi1vOu2cK8AMx2r_94wC7ugiwIXPgrvW1g-zany9KNOk4Ct9EUkY5H-lJLLpXEDeVHcHmAobV9DFCcy3NP6_B_onPt4ontek",
+  "expires_in": 3599,
+  "refresh_token": "1//0hl6zVohXDL9SCgYIARAAGBESNwF-L9IrZLk58Jw2ZM_g4Pfz8ZHAf2kqYYPY93TU8UdDC_64UTF8QHxdsLvlk18Ak6d0-00kTgA",
+  "scope": "https://www.googleapis.com/auth/contacts",
+  "token_type": "Bearer"
+}
+--------------------------------------------------------------------------------
+Request : GET https://people.googleapis.com/v1/{+resourceName}/connections
+Headers:
+Authorization: Bearer ya29.A0ARrdaM-ya0iV9m816tIcWv4NN9FcmJ7gAtdW3oWJej9YIzbXepdESnldMed8gi1vOu2cK8AMx2r_94wC7ugiwIXPgrvW1g-zany9KNOk4Ct9EUkY5H-lJLLpXEDeVHcHmAobV9DFCcy3NP6_B_onPt4ontek
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 404 : Not Found
+Headers:
+Date: Thu, 28 Apr 2022 13:45:49 GMT
+Content-Type: text/html; charset=UTF-8
+Server: ESF
+Content-Length: 1595
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Connection: close
+Body:
+<!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 404 (Not Found)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>404.</b> <ins>That’s an error.</ins>
+  <p>The requested URL <code>/v1/%7B+resourceName%7D/connections</code> was not found on this server.  <ins>That’s all we know.</ins>
+
+--------------------------------------------------------------------------------
+Request : POST https://accounts.google.com/o/oauth2/token
+Headers:
+Content-Type:application/x-www-form-urlencoded
+Body:
+client_id=502080815718-1r1iseasap01bovrrs35rrq9053sfke9.apps.googleusercontent.com&client_secret=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&grant_type=authorization_code&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&code=4%2F1AX4XfWi3YtX9GkkLu7b5KAb5Rzv8yAmDOTl0Yzu4vJKcL4x6OMYLzYMCj1g
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Date: Thu, 28 Apr 2022 13:51:01 GMT
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Content-Type: application/json; charset=utf-8
+Vary: X-Origin
+Vary: Referer
+Server: scaffolding on HTTPServer2
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+  "access_token": "ya29.A0ARrdaM-yAz8Uyk6UtHw2pGySuVXfyyrhCwLT9Td4Lz7IHot9MjP8IbZ1VrSZznfYvdaJgpp6Di6NZgW1NMjwOmbR2dxoQdAWDM4ztCNrdjwQT4Ai7MkQXoqnh8HrbCjFT5TsRu8OgCazuYmnRgVLPOKJX6Ih",
+  "expires_in": 3599,
+  "refresh_token": "1//0hRxCP5UlwLRSCgYIARAAGBESNwF-L9Ir_yituPlEZvN5cOuOEPAeG6Yx31_l0g9Z_KGHxMRKKhlybLkniXNRN_ftDmB4DqvGRb4",
+  "scope": "https://www.googleapis.com/auth/contacts",
+  "token_type": "Bearer"
+}
+--------------------------------------------------------------------------------
+Request : GET https://people.googleapis.com/v1/{+resourceName}/connections?pageSize: 10, personFields: "names,emailAddresses"
+Headers:
+Authorization: Bearer ya29.A0ARrdaM-yAz8Uyk6UtHw2pGySuVXfyyrhCwLT9Td4Lz7IHot9MjP8IbZ1VrSZznfYvdaJgpp6Di6NZgW1NMjwOmbR2dxoQdAWDM4ztCNrdjwQT4Ai7MkQXoqnh8HrbCjFT5TsRu8OgCazuYmnRgVLPOKJX6Ih
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 400 : Bad Request
+Headers:
+Content-Type: text/html; charset=UTF-8
+Referrer-Policy: no-referrer
+Content-Length: 1555
+Date: Thu, 28 Apr 2022 13:51:01 GMT
+Body:
+<!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 400 (Bad Request)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>400.</b> <ins>That’s an error.</ins>
+  <p>Your client has issued a malformed or illegal request.  <ins>That’s all we know.</ins>
+
+--------------------------------------------------------------------------------
+Request : POST https://accounts.google.com/o/oauth2/token
+Headers:
+Content-Type:application/x-www-form-urlencoded
+Body:
+client_id=502080815718-1r1iseasap01bovrrs35rrq9053sfke9.apps.googleusercontent.com&client_secret=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&grant_type=authorization_code&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&code=4%2F1AX4XfWgvAK-ckzeC9S3Ah_sVKOH2cZ_ixS0yyK0sSyQzTEao09x-fIuKy2Q
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Date: Thu, 28 Apr 2022 13:53:36 GMT
+Content-Type: application/json; charset=utf-8
+Vary: X-Origin
+Vary: Referer
+Server: scaffolding on HTTPServer2
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+  "access_token": "ya29.A0ARrdaM_lqT1K4sO0g05g1wUHvg5X6JDs-9Aue2xRnVjXPpMW5G2aakdypaG64WgCFVtqzvAxzaL9af1sC3ZTyfjpIqdv12470b_NjnNGeQZCrUtJpYuFp15N0WBsajK35TN3fiL6693VPTH4c2bThXs1rg8R",
+  "expires_in": 3599,
+  "refresh_token": "1//0h41Nl7IiVYi4CgYIARAAGBESNwF-L9Irpa0CGFBlMQuIfnUoNDBB89zGmiCY0MFSqdfYG-r_FTq1AwHAIrVKRQV_GKM3BTlQ7Y4",
+  "scope": "https://www.googleapis.com/auth/contacts",
+  "token_type": "Bearer"
+}
+--------------------------------------------------------------------------------
+Request : GET https://people.googleapis.com/v1/{+resourceName}/connections?pageSize=10, personFields="names,emailAddresses"
+Headers:
+Authorization: Bearer ya29.A0ARrdaM_lqT1K4sO0g05g1wUHvg5X6JDs-9Aue2xRnVjXPpMW5G2aakdypaG64WgCFVtqzvAxzaL9af1sC3ZTyfjpIqdv12470b_NjnNGeQZCrUtJpYuFp15N0WBsajK35TN3fiL6693VPTH4c2bThXs1rg8R
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 400 : Bad Request
+Headers:
+Content-Type: text/html; charset=UTF-8
+Referrer-Policy: no-referrer
+Content-Length: 1555
+Date: Thu, 28 Apr 2022 13:53:37 GMT
+Body:
+<!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 400 (Bad Request)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>400.</b> <ins>That’s an error.</ins>
+  <p>Your client has issued a malformed or illegal request.  <ins>That’s all we know.</ins>
+
+--------------------------------------------------------------------------------
+Request : POST https://accounts.google.com/o/oauth2/token
+Headers:
+Content-Type:application/x-www-form-urlencoded
+Body:
+client_id=502080815718-1r1iseasap01bovrrs35rrq9053sfke9.apps.googleusercontent.com&client_secret=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&grant_type=authorization_code&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&code=4%2F1AX4XfWh-v970ML3JMSllbgBAJ7RGB42AQySEklr13qe_z16OPnsZrXc5g44
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+Pragma: no-cache
+Date: Thu, 28 Apr 2022 13:55:56 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Content-Type: application/json; charset=utf-8
+Vary: X-Origin
+Vary: Referer
+Server: scaffolding on HTTPServer2
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+  "access_token": "ya29.A0ARrdaM_C0f9lzUI5i4XCMy14Zj6JKCVHa2R7TZAaeSEf1DltAOqT19hVyeTi6-6BI8H8rq35QKHY33gEjJqust5C-1GjwqFCIj68kcDiJI8FGC4nHIcDpDwIpz_ZQcqtAR6Ys7Z8Ls34uNPe8X2Ng8TdYI6N",
+  "expires_in": 3599,
+  "refresh_token": "1//0hRd1wzo7at8ACgYIARAAGBESNwF-L9Ir2tqnzB9_1bdjiEFJaTyvZiraINPxG2bSryUTR6og26EYZ9yaBYNju7oe-OVohsrBzSg",
+  "scope": "https://www.googleapis.com/auth/contacts",
+  "token_type": "Bearer"
+}
+--------------------------------------------------------------------------------
+Request : GET https://people.googleapis.com/v1/{+resourceName}/connections?pageSize=10, includeField="names,emailAddresses"
+Headers:
+Authorization: Bearer ya29.A0ARrdaM_C0f9lzUI5i4XCMy14Zj6JKCVHa2R7TZAaeSEf1DltAOqT19hVyeTi6-6BI8H8rq35QKHY33gEjJqust5C-1GjwqFCIj68kcDiJI8FGC4nHIcDpDwIpz_ZQcqtAR6Ys7Z8Ls34uNPe8X2Ng8TdYI6N
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 400 : Bad Request
+Headers:
+Content-Type: text/html; charset=UTF-8
+Referrer-Policy: no-referrer
+Content-Length: 1555
+Date: Thu, 28 Apr 2022 13:55:57 GMT
+Body:
+<!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 400 (Bad Request)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>400.</b> <ins>That’s an error.</ins>
+  <p>Your client has issued a malformed or illegal request.  <ins>That’s all we know.</ins>
+
+--------------------------------------------------------------------------------
+Request : POST https://accounts.google.com/o/oauth2/token
+Headers:
+Content-Type:application/x-www-form-urlencoded
+Body:
+client_id=502080815718-1r1iseasap01bovrrs35rrq9053sfke9.apps.googleusercontent.com&client_secret=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&grant_type=authorization_code&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&code=4%2F1AX4XfWikPBRs2JnM4098Tat5yn7IjJs7Vy9taiKuMcfoFoXDf6gqhVtRBxg
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+Date: Thu, 28 Apr 2022 13:56:45 GMT
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Pragma: no-cache
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Type: application/json; charset=utf-8
+Vary: X-Origin
+Vary: Referer
+Server: scaffolding on HTTPServer2
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+  "access_token": "ya29.A0ARrdaM9OzNr6dHusXRGvPht3L1GUGT7ysQoG4gk8NrpTLN2WcgI2VBrVchlQHnRgkXIvwu3_4iHx2Ejq6U27iDupBg4KZ7WzOsjuTkL9gfXT8bKJylw0A0QCFiauBzcyGQjaMhILP6VTDyS2FsajBME4Qq9M",
+  "expires_in": 3599,
+  "refresh_token": "1//0hA04GcaXdr8WCgYIARAAGBESNwF-L9Ir_83I9XMeNHNQva0NTbSKwK81G3b6h0f8iXZR8CN_wKpqltnUrONIgmeezt3hKY4KssU",
+  "scope": "https://www.googleapis.com/auth/contacts",
+  "token_type": "Bearer"
+}
+--------------------------------------------------------------------------------
+Request : GET https://people.googleapis.com/v1/{+resourceName}/connections?pageSize=10, requestMask.includeField="names,emailAddresses"
+Headers:
+Authorization: Bearer ya29.A0ARrdaM9OzNr6dHusXRGvPht3L1GUGT7ysQoG4gk8NrpTLN2WcgI2VBrVchlQHnRgkXIvwu3_4iHx2Ejq6U27iDupBg4KZ7WzOsjuTkL9gfXT8bKJylw0A0QCFiauBzcyGQjaMhILP6VTDyS2FsajBME4Qq9M
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 400 : Bad Request
+Headers:
+Content-Type: text/html; charset=UTF-8
+Referrer-Policy: no-referrer
+Content-Length: 1555
+Date: Thu, 28 Apr 2022 13:56:46 GMT
+Body:
+<!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 400 (Bad Request)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>400.</b> <ins>That’s an error.</ins>
+  <p>Your client has issued a malformed or illegal request.  <ins>That’s all we know.</ins>
+
+--------------------------------------------------------------------------------
+Request : POST https://accounts.google.com/o/oauth2/token
+Headers:
+Content-Type:application/x-www-form-urlencoded
+Body:
+client_id=502080815718-1r1iseasap01bovrrs35rrq9053sfke9.apps.googleusercontent.com&client_secret=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&grant_type=authorization_code&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&code=4%2F1AX4XfWiEl_916PQUuoIwDXxcn5qHxR9TzDVJE9ZuZH2dO0auSaU1iRj6cKw
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Thu, 28 Apr 2022 13:57:22 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Type: application/json; charset=utf-8
+Vary: X-Origin
+Vary: Referer
+Server: scaffolding on HTTPServer2
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+  "access_token": "ya29.A0ARrdaM8G9dDqiLQxxiN1HMUjdxpBBUYeH-1q1VuFum1Lj8rW-Dtu1KjoQXjX2HC1DTzEJk_IicWJNa-E7J9HaLIuWrGF6vrqbsswKwhdMnRivm5-RAfLpY_MW3WhfhBOPGRimH9yA5arqpHIk-7RdZzIzxNV",
+  "expires_in": 3599,
+  "refresh_token": "1//0h-eaZVD1AB3MCgYIARAAGBESNwF-L9Irqo3KIISYJekTC_9Agr33BV4LN-qImUr84jb-POeWxPVOZvlpsDQrZGaQXqLcWTg8N6o",
+  "scope": "https://www.googleapis.com/auth/contacts",
+  "token_type": "Bearer"
+}
+--------------------------------------------------------------------------------
+Request : GET https://people.googleapis.com/v1/{+resourceName}/connections?pageSize=10, requestMask.includeField="names,emailAddresses"
+Headers:
+Authorization: Bearer ya29.A0ARrdaM8G9dDqiLQxxiN1HMUjdxpBBUYeH-1q1VuFum1Lj8rW-Dtu1KjoQXjX2HC1DTzEJk_IicWJNa-E7J9HaLIuWrGF6vrqbsswKwhdMnRivm5-RAfLpY_MW3WhfhBOPGRimH9yA5arqpHIk-7RdZzIzxNV
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 400 : Bad Request
+Headers:
+Content-Type: text/html; charset=UTF-8
+Referrer-Policy: no-referrer
+Content-Length: 1555
+Date: Thu, 28 Apr 2022 13:57:22 GMT
+Body:
+<!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 400 (Bad Request)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>400.</b> <ins>That’s an error.</ins>
+  <p>Your client has issued a malformed or illegal request.  <ins>That’s all we know.</ins>
+
+--------------------------------------------------------------------------------
+Request : POST https://accounts.google.com/o/oauth2/token
+Headers:
+Content-Type:application/x-www-form-urlencoded
+Body:
+client_id=502080815718-1r1iseasap01bovrrs35rrq9053sfke9.apps.googleusercontent.com&client_secret=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&grant_type=authorization_code&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&code=4%2F1AX4XfWgTEFFMru25eORXuQx9eeGowZ8Nko9g3MKNug10vFHUp2zC1qnRIlc
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Wed, 04 May 2022 05:47:32 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Vary: X-Origin
+Vary: Referer
+Server: scaffolding on HTTPServer2
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+  "access_token": "ya29.A0ARrdaM8o3yqU4NW7siCFgb2sz5gHVuglNrKbYmEvkxp8mdj8eJcwvGgBh3VX18O0XPfb-hbDdmMCN0JP5yFBuGqmcrO-Dxo3Kv_pDjz3iFa-UcNLnz-WW5Uk1tqdD_M-Q4WlhI8ayabxGBX2jupm0WK2g1CB",
+  "expires_in": 3599,
+  "refresh_token": "1//0hsZOM7LyPuDBCgYIARAAGBESNwF-L9IrRyp_4Rwig2zsVYQDAHvNprZqFV3vex5Ly4o9WzgxIDlk7bXCbXdSaEMWa9eL_7bjxqQ",
+  "scope": "https://www.googleapis.com/auth/contacts",
+  "token_type": "Bearer"
+}
+--------------------------------------------------------------------------------
+Request : GET https://people.googleapis.com/v1/{+resourceName}/connections
+Headers:
+Authorization: Bearer ya29.A0ARrdaM8o3yqU4NW7siCFgb2sz5gHVuglNrKbYmEvkxp8mdj8eJcwvGgBh3VX18O0XPfb-hbDdmMCN0JP5yFBuGqmcrO-Dxo3Kv_pDjz3iFa-UcNLnz-WW5Uk1tqdD_M-Q4WlhI8ayabxGBX2jupm0WK2g1CB
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 404 : Not Found
+Headers:
+Date: Wed, 04 May 2022 05:47:35 GMT
+Content-Type: text/html; charset=UTF-8
+Server: ESF
+Content-Length: 1595
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Connection: close
+Body:
+<!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 404 (Not Found)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>404.</b> <ins>That’s an error.</ins>
+  <p>The requested URL <code>/v1/%7B+resourceName%7D/connections</code> was not found on this server.  <ins>That’s all we know.</ins>
+

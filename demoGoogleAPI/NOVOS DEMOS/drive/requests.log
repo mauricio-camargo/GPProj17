@@ -1,0 +1,183 @@
+--------------------------------------------------------------------------------
+Request : POST https://accounts.google.com/o/oauth2/token
+Headers:
+Content-Type:application/x-www-form-urlencoded
+Body:
+client_id=502080815718-1r1iseasap01bovrrs35rrq9053sfke9.apps.googleusercontent.com&client_secret=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&grant_type=authorization_code&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&code=4%2F1AX4XfWhpq84IlMZyFlYAi2jvp2bgQ0r-nN7usKxSvtnwb6hZ5AurPmQYT-k
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+Date: Thu, 12 May 2022 12:27:05 GMT
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Type: application/json; charset=utf-8
+Vary: X-Origin
+Vary: Referer
+Server: scaffolding on HTTPServer2
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+  "access_token": "ya29.A0ARrdaM9BRikwgoWSy660tP-FvmTka-c36rNBqg6FrJE6MnuKDURv4S50EuzYzcWRwOh98ttUDFiJN4H688sJMYVQHdJUE9A8mgJc9g7EDOrgrBZ1MPA3SxI9owbjX8XjZSZeOy__2dXZSuGYpAsX5N4pjuNz",
+  "expires_in": 3599,
+  "refresh_token": "1//0hF7EsdMTAHS1CgYIARAAGBESNwF-L9IriA1R2MHoTfRDGFCLZ4pXR3ttaPNTJ2KWNViKlNPFiQzcVsh1O5sDdVAH0D0iSVyfd9M",
+  "scope": "https://www.googleapis.com/auth/drive",
+  "token_type": "Bearer"
+}
+--------------------------------------------------------------------------------
+Request : GET https://www.googleapis.com/drive/v3/files?pageSize=197666&q=mimeType+%3D+'application%2Fvnd.google-apps.folder'+and+'root'+in+parents
+Headers:
+Authorization: Bearer ya29.A0ARrdaM9BRikwgoWSy660tP-FvmTka-c36rNBqg6FrJE6MnuKDURv4S50EuzYzcWRwOh98ttUDFiJN4H688sJMYVQHdJUE9A8mgJc9g7EDOrgrBZ1MPA3SxI9owbjX8XjZSZeOy__2dXZSuGYpAsX5N4pjuNz
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 400 : Bad Request
+Headers:
+Vary: X-Origin
+Content-Type: application/json; charset=UTF-8
+Date: Thu, 12 May 2022 12:27:06 GMT
+Expires: Thu, 12 May 2022 12:27:06 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self'
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalidParameter",
+    "message": "Invalid value '197666'. Values must be within the range: [1, 1000]",
+    "locationType": "parameter",
+    "location": "pageSize"
+   }
+  ],
+  "code": 400,
+  "message": "Invalid value '197666'. Values must be within the range: [1, 1000]"
+ }
+}
+
+--------------------------------------------------------------------------------
+Request : POST https://accounts.google.com/o/oauth2/token
+Headers:
+Content-Type:application/x-www-form-urlencoded
+Body:
+client_id=502080815718-1r1iseasap01bovrrs35rrq9053sfke9.apps.googleusercontent.com&client_secret=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&grant_type=authorization_code&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&code=4%2F1AX4XfWjHbAKGd2uundPO2H1XoKe0-YsIfZkAEQAVUDFzaJjcFzMj-H0fRiA
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+Pragma: no-cache
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Thu, 12 May 2022 12:30:32 GMT
+Content-Type: application/json; charset=utf-8
+Vary: X-Origin
+Vary: Referer
+Server: scaffolding on HTTPServer2
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+  "access_token": "ya29.A0ARrdaM-CteMtMIR5IBJW8xgFftRHPJGOjWL4FxIdrL9b9Z-HdJCHaZdqK1_zrBZ6HTZczjKyurlPZHwIqWgkKHpeOGjJIGfEwpeEXRfnb9mhUllVM6Jzk3tr7mkCha87g9_k-GAVHMNkMbiIl76rDL1UbbDv",
+  "expires_in": 3599,
+  "refresh_token": "1//0hti0L8k-672KCgYIARAAGBESNwF-L9Ir9Kt2LP2Xaxep6qS27ETk5YjXVnYdMDQ0_qdtWpg0NsSwX2yoElOiWctlK4JHOCbKImo",
+  "scope": "https://www.googleapis.com/auth/drive",
+  "token_type": "Bearer"
+}
+--------------------------------------------------------------------------------
+Request : GET https://www.googleapis.com/drive/v3/files?pageSize=197666&q=mimeType+%3D+'application%2Fvnd.google-apps.folder'+and+'root
+Headers:
+Authorization: Bearer ya29.A0ARrdaM-CteMtMIR5IBJW8xgFftRHPJGOjWL4FxIdrL9b9Z-HdJCHaZdqK1_zrBZ6HTZczjKyurlPZHwIqWgkKHpeOGjJIGfEwpeEXRfnb9mhUllVM6Jzk3tr7mkCha87g9_k-GAVHMNkMbiIl76rDL1UbbDv
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 400 : Bad Request
+Headers:
+Vary: X-Origin
+Content-Type: application/json; charset=UTF-8
+Date: Thu, 12 May 2022 12:30:32 GMT
+Expires: Thu, 12 May 2022 12:30:32 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self'
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalidParameter",
+    "message": "Invalid value '197666'. Values must be within the range: [1, 1000]",
+    "locationType": "parameter",
+    "location": "pageSize"
+   }
+  ],
+  "code": 400,
+  "message": "Invalid value '197666'. Values must be within the range: [1, 1000]"
+ }
+}
+
+--------------------------------------------------------------------------------
+Request : POST https://accounts.google.com/o/oauth2/token
+Headers:
+Content-Type:application/x-www-form-urlencoded
+Body:
+client_id=502080815718-1r1iseasap01bovrrs35rrq9053sfke9.apps.googleusercontent.com&client_secret=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&grant_type=authorization_code&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&code=4%2F1AX4XfWjHbAKGd2uundPO2H1XoKe0-YsIfZkAEQAVUDFzaJjcFzMj-H0fRiA
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 400 : Bad Request
+Headers:
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Date: Thu, 12 May 2022 12:30:36 GMT
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Vary: X-Origin
+Vary: Referer
+Server: scaffolding on HTTPServer2
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+  "error": "invalid_grant",
+  "error_description": "Bad Request"
+}

@@ -1,0 +1,193 @@
+object Form1: TForm1
+  Left = 513
+  Height = 666
+  Top = 217
+  Width = 1423
+  Caption = 'Form1'
+  ClientHeight = 666
+  ClientWidth = 1423
+  DesignTimePPI = 144
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  LCLVersion = '2.2.0.4'
+  object Panel1: TPanel
+    Left = 0
+    Height = 137
+    Top = 0
+    Width = 1423
+    Align = alTop
+    ClientHeight = 137
+    ClientWidth = 1423
+    TabOrder = 0
+    object EAccessCode: TEdit
+      Left = 358
+      Height = 33
+      Top = 17
+      Width = 653
+      TabOrder = 0
+    end
+    object Button1: TButton
+      Left = 563
+      Height = 37
+      Top = 68
+      Width = 112
+      Caption = 'Ok'
+      OnClick = Button1Click
+      TabOrder = 1
+    end
+    object Button5: TButton
+      Left = 717
+      Height = 37
+      Top = 68
+      Width = 112
+      Caption = 'Cancela'
+      OnClick = Button5Click
+      TabOrder = 2
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 529
+    Top = 137
+    Width = 572
+    Align = alLeft
+    ClientHeight = 529
+    ClientWidth = 572
+    TabOrder = 1
+    object Button2: TButton
+      Left = 51
+      Height = 37
+      Top = 17
+      Width = 171
+      Caption = 'Ler calendários'
+      OnClick = Button2Click
+      TabOrder = 0
+    end
+    object CLBcal: TCheckListBox
+      Left = 9
+      Height = 351
+      Top = 68
+      Width = 253
+      ItemHeight = 0
+      OnSelectionChange = LBcalSelectionChange
+      TabOrder = 1
+    end
+    object Button4: TButton
+      Left = 350
+      Height = 37
+      Top = 17
+      Width = 155
+      Caption = 'Ler eventos'
+      Enabled = False
+      OnClick = Button4Click
+      TabOrder = 2
+    end
+    object Memo1: TMemo
+      Left = 290
+      Height = 350
+      Top = 68
+      Width = 273
+      Lines.Strings = (
+        ''
+      )
+      TabOrder = 3
+    end
+    object Button3: TButton
+      Left = 111
+      Height = 37
+      Top = 478
+      Width = 247
+      Caption = 'Inserir evento'
+      OnClick = Button3Click
+      TabOrder = 4
+    end
+    object Label1: TLabel
+      Left = 61
+      Height = 25
+      Top = 430
+      Width = 51
+      Caption = 'Label1'
+      Enabled = False
+    end
+  end
+  object Panel3: TPanel
+    Left = 572
+    Height = 529
+    Top = 137
+    Width = 546
+    Align = alLeft
+    ClientHeight = 529
+    ClientWidth = 546
+    TabOrder = 2
+    object Button6: TButton
+      Left = 34
+      Height = 37
+      Top = 17
+      Width = 145
+      Caption = 'Ler tarefas'
+      OnClick = Button6Click
+      TabOrder = 0
+    end
+    object CLBtask: TCheckListBox
+      Left = 9
+      Height = 351
+      Top = 68
+      Width = 253
+      ItemHeight = 0
+      TabOrder = 1
+    end
+    object Button7: TButton
+      Left = 391
+      Height = 37
+      Top = 17
+      Width = 112
+      Caption = 'Button7'
+      OnClick = Button7Click
+      TabOrder = 2
+    end
+    object Button8: TButton
+      Left = 394
+      Height = 37
+      Top = 107
+      Width = 112
+      Caption = 'Button8'
+      OnClick = Button8Click
+      TabOrder = 3
+    end
+  end
+  object Panel4: TPanel
+    Left = 1118
+    Height = 529
+    Top = 137
+    Width = 305
+    Align = alClient
+    TabOrder = 3
+  end
+  object Conn: TSQLite3Connection
+    Connected = False
+    LoginPrompt = True
+    KeepConnection = False
+    Transaction = Trans
+    AlwaysUseBigint = False
+    Left = 230
+    Top = 43
+  end
+  object QTemp: TSQLQuery
+    PacketRecords = -1
+    FieldDefs = <>
+    Database = Conn
+    Transaction = Trans
+    Options = [sqoAutoApplyUpdates, sqoAutoCommit]
+    Params = <>
+    Macros = <>
+    UpdateMode = upWhereAll
+    Left = 162
+    Top = 43
+  end
+  object Trans: TSQLTransaction
+    Active = False
+    Database = Conn
+    Left = 94
+    Top = 43
+  end
+end

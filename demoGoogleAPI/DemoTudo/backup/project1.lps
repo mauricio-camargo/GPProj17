@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="project1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="57"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unit1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit1"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="259"/>
+        <CursorPos X="3" Y="272"/>
+        <UsageCount Value="57"/>
+        <Bookmarks Count="4">
+          <Item0 Y="336" ID="3"/>
+          <Item1 X="3" Y="458" ID="4"/>
+          <Item2 X="3" Y="272"/>
+          <Item3 Y="71" ID="1"/>
+        </Bookmarks>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../calendar_Novo/frmmain.pp"/>
+        <ComponentName Value="MainForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="118"/>
+        <CursorPos X="21" Y="118"/>
+        <ComponentState Value="1"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../gmail/frmmain.pp"/>
+        <ComponentName Value="MainForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="90"/>
+        <CursorPos X="106" Y="98"/>
+        <UsageCount Value="8"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../tasks/frmmain.pp"/>
+        <ComponentName Value="MainForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="173"/>
+        <CursorPos X="16" Y="219"/>
+        <UsageCount Value="17"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../calendar_Original/frmmain.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="192"/>
+        <CursorPos Y="203"/>
+        <UsageCount Value="10"/>
+        <Bookmarks Count="1">
+          <Item0 Y="203" ID="7"/>
+        </Bookmarks>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/fpcsrc/3.2.2/packages/googleapi/src/googleclient.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="124"/>
+        <CursorPos Y="5"/>
+        <UsageCount Value="9"/>
+        <Bookmarks Count="1">
+          <Item0 X="20" Y="90"/>
+        </Bookmarks>
+      </Unit>
+      <Unit>
+        <Filename Value="../google-oauth2-master-GitHub/frmmain.pas"/>
+        <ComponentName Value="Mainform"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frmMain"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="186"/>
+        <CursorPos X="17" Y="196"/>
+        <UsageCount Value="8"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/fpcsrc/3.2.2/packages/googleapi/src/googletasks.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="925"/>
+        <CursorPos X="17" Y="946"/>
+        <UsageCount Value="13"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/fpcsrc/3.2.2/packages/googleapi/src/googleservice.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="218"/>
+        <CursorPos X="28" Y="220"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/fpcsrc/3.2.2/packages/googleapi/src/googlepeople.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="3140"/>
+        <CursorPos X="19" Y="3145"/>
+        <UsageCount Value="15"/>
+        <Bookmarks Count="4">
+          <Item0 X="32" Y="1077" ID="5"/>
+          <Item1 X="5" Y="1067"/>
+          <Item2 Y="3146" ID="1"/>
+          <Item3 Y="1033" ID="2"/>
+        </Bookmarks>
+      </Unit>
+      <Unit>
+        <Filename Value="unit1 (cópia).pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="126"/>
+        <CursorPos X="116" Y="135"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unit1_.pas"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit1"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="264"/>
+        <CursorPos X="29" Y="274"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unit1a.pas"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit1"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="280"/>
+        <CursorPos X="3" Y="281"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unit1aa.pas"/>
+        <UnitName Value="Unit1"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="294"/>
+        <CursorPos X="3" Y="331"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/fpcsrc/3.2.2/packages/googleapi/src/googlecalendar.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1610"/>
+        <CursorPos X="40" Y="1618"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../../../../../lazarus/fpc/3.2.2/source/packages/googleapi/src/googletasks.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="43"/>
+        <CursorPos X="11" Y="63"/>
+        <UsageCount Value="16"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../../../../../lazarus/fpc/3.2.2/source/packages/googleapi/src/googlepeople.pp"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="26"/>
+        <CursorPos X="19" Y="46"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="407" Column="14" TopLine="396"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="411" Column="9" TopLine="399"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="422" Column="14" TopLine="410"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="412" Column="53" TopLine="400"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="433" Column="35" TopLine="421"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="272" Column="3" TopLine="268"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="67" Column="23" TopLine="58"/>
+      </Position>
+      <Position>
+        <Filename Value="../../../../../../../lazarus/fpc/3.2.2/source/packages/googleapi/src/googlepeople.pp"/>
+        <Caret Line="1122" Column="3" TopLine="1042"/>
+      </Position>
+      <Position>
+        <Filename Value="../../../../../../../lazarus/fpc/3.2.2/source/packages/googleapi/src/googlepeople.pp"/>
+      </Position>
+      <Position>
+        <Filename Value="../../../../../../../lazarus/fpc/3.2.2/source/packages/googleapi/src/googlepeople.pp"/>
+        <Caret Line="42" Column="11" TopLine="22"/>
+      </Position>
+      <Position>
+        <Filename Value="../../../../../../../lazarus/fpc/3.2.2/source/packages/googleapi/src/googlepeople.pp"/>
+        <Caret Line="77" Column="51" TopLine="57"/>
+      </Position>
+      <Position>
+        <Filename Value="../../../../../../../lazarus/fpc/3.2.2/source/packages/googleapi/src/googlepeople.pp"/>
+        <Caret Line="943" Column="39" TopLine="923"/>
+      </Position>
+      <Position>
+        <Filename Value="../../../../../../../lazarus/fpc/3.2.2/source/packages/googleapi/src/googlepeople.pp"/>
+        <Caret Line="948" Column="82" TopLine="928"/>
+      </Position>
+      <Position>
+        <Filename Value="../../../../../../../lazarus/fpc/3.2.2/source/packages/googleapi/src/googlepeople.pp"/>
+        <Caret Line="953" Column="116" TopLine="933"/>
+      </Position>
+      <Position>
+        <Filename Value="../../../../../../../lazarus/fpc/3.2.2/source/packages/googleapi/src/googlepeople.pp"/>
+        <Caret Line="960" Column="13" TopLine="939"/>
+      </Position>
+      <Position>
+        <Filename Value="../../../../../../../lazarus/fpc/3.2.2/source/packages/googleapi/src/googlepeople.pp"/>
+        <Caret Line="963" Column="11" TopLine="942"/>
+      </Position>
+      <Position>
+        <Filename Value="../../../../../../../lazarus/fpc/3.2.2/source/packages/googleapi/src/googlepeople.pp"/>
+        <Caret Line="965" Column="13" TopLine="944"/>
+      </Position>
+      <Position>
+        <Filename Value="../../../../../../../lazarus/fpc/3.2.2/source/packages/googleapi/src/googlepeople.pp"/>
+        <Caret Line="968" Column="25" TopLine="947"/>
+      </Position>
+      <Position>
+        <Filename Value="../../../../../../../lazarus/fpc/3.2.2/source/packages/googleapi/src/googlepeople.pp"/>
+        <Caret Line="974" Column="21" TopLine="950"/>
+      </Position>
+      <Position>
+        <Filename Value="../../../../../../../lazarus/fpc/3.2.2/source/packages/googleapi/src/googlepeople.pp"/>
+        <Caret Line="2973" Column="33" TopLine="2952"/>
+      </Position>
+      <Position>
+        <Filename Value="../../../../../../../lazarus/fpc/3.2.2/source/packages/googleapi/src/googlepeople.pp"/>
+        <Caret Line="2975" Column="15" TopLine="2955"/>
+      </Position>
+      <Position>
+        <Filename Value="../../../../../../../lazarus/fpc/3.2.2/source/packages/googleapi/src/googlepeople.pp"/>
+        <Caret Line="2976" Column="11" TopLine="2956"/>
+      </Position>
+      <Position>
+        <Filename Value="../../../../../../../lazarus/fpc/3.2.2/source/packages/googleapi/src/googlepeople.pp"/>
+        <Caret Line="2996" Column="11" TopLine="2975"/>
+      </Position>
+      <Position>
+        <Filename Value="../../../../../../../lazarus/fpc/3.2.2/source/packages/googleapi/src/googlepeople.pp"/>
+        <Caret Line="3000" Column="19" TopLine="2979"/>
+      </Position>
+      <Position>
+        <Filename Value="../../../../../../../lazarus/fpc/3.2.2/source/packages/googleapi/src/googlepeople.pp"/>
+        <Caret Line="3005" Column="15" TopLine="2982"/>
+      </Position>
+      <Position>
+        <Filename Value="../../../../../../../lazarus/fpc/3.2.2/source/packages/googleapi/src/googlepeople.pp"/>
+        <Caret Line="3327" Column="96" TopLine="3306"/>
+      </Position>
+      <Position>
+        <Filename Value="../../../../../../../lazarus/fpc/3.2.2/source/packages/googleapi/src/googlepeople.pp"/>
+        <Caret Line="3418" Column="59" TopLine="3394"/>
+      </Position>
+      <Position>
+        <Filename Value="../../../../../../../lazarus/fpc/3.2.2/source/packages/googleapi/src/googlepeople.pp"/>
+        <Caret Line="3460" Column="11" TopLine="3439"/>
+      </Position>
+      <Position>
+        <Filename Value="../../../../../../../lazarus/fpc/3.2.2/source/packages/googleapi/src/googlepeople.pp"/>
+        <Caret Line="27" Column="25" TopLine="18"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="71" TopLine="58"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

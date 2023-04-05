@@ -1,0 +1,120 @@
+object MainForm: TMainForm
+  Left = 456
+  Height = 486
+  Top = 191
+  Width = 987
+  Caption = 'Google Tasks demo'
+  ClientHeight = 486
+  ClientWidth = 987
+  DesignTimePPI = 135
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  LCLVersion = '2.2.0.4'
+  object BFetchTaskLists: TButton
+    Left = 11
+    Height = 36
+    Top = 11
+    Width = 158
+    Caption = 'Fetch task lists'
+    OnClick = BFetchTaskListsClick
+    TabOrder = 0
+  end
+  object GBAccess: TGroupBox
+    Left = 0
+    Height = 103
+    Top = 383
+    Width = 987
+    Align = alBottom
+    Caption = 'Please provide Google API access code'
+    ClientHeight = 78
+    ClientWidth = 985
+    TabOrder = 1
+    Visible = False
+    object LEAccess: TLabel
+      Left = 22
+      Height = 24
+      Top = 11
+      Width = 113
+      Caption = 'Access code'
+    end
+    object BSetAccess: TButton
+      Left = 747
+      Height = 36
+      Top = 2
+      Width = 105
+      Anchors = [akTop, akRight]
+      Caption = 'OK'
+      OnClick = BSetAccessClick
+      TabOrder = 0
+    end
+    object BCancel: TButton
+      Left = 859
+      Height = 36
+      Top = 0
+      Width = 105
+      Anchors = [akTop, akRight]
+      Caption = 'Cancel'
+      OnClick = BCancelClick
+      TabOrder = 1
+    end
+    object EAccessCode: TEdit
+      Left = 158
+      Height = 40
+      Top = 11
+      Width = 562
+      TabOrder = 2
+    end
+  end
+  object BFetchTasks: TButton
+    Left = 787
+    Height = 36
+    Top = 11
+    Width = 158
+    Anchors = [akTop, akRight]
+    Caption = 'Fetch tasks'
+    Enabled = False
+    OnClick = BFetchTasksClick
+    TabOrder = 2
+  end
+  object LBTaskLists: TListBox
+    Left = 11
+    Height = 297
+    Top = 56
+    Width = 506
+    Anchors = [akTop, akLeft, akBottom]
+    ItemHeight = 0
+    OnSelectionChange = LBTaskListsSelectionChange
+    ScrollWidth = 356
+    TabOrder = 3
+    TopIndex = -1
+  end
+  object LBTasks: TListBox
+    Left = 540
+    Height = 308
+    Top = 56
+    Width = 427
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    ItemHeight = 0
+    ScrollWidth = 300
+    TabOrder = 4
+    TopIndex = -1
+  end
+  object LTasks: TLabel
+    Left = 551
+    Height = 24
+    Top = 22
+    Width = 226
+    Anchors = [akTop, akLeft, akRight]
+    Caption = 'Tasks for list : <select a tasklist>'
+  end
+  object Memo1: TMemo
+    Left = 11
+    Height = 127
+    Top = 304
+    Width = 956
+    Lines.Strings = (
+      'Memo1'
+    )
+    TabOrder = 5
+  end
+end

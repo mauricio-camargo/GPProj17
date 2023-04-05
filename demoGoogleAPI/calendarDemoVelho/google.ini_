@@ -1,0 +1,13 @@
+[Credentials]
+ClientID=502080815718-1r1iseasap01bovrrs35rrq9053sfke9.apps.googleusercontent.com
+ClientSecret=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
+Scope=https://www.googleapis.com/auth/calendar
+
+[Session]
+;RefreshToken=
+;AccessToken=
+;TokenType=
+;AuthExpires=
+;AuthPeriod=
+;AccessToken=
+

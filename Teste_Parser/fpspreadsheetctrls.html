@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>fpspreadsheetctrls</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<h1 class="unit">Unit fpspreadsheetctrls</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Uses</div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+<p>
+Unit fpspreadsheetctrls implements some <strong>visual controls</strong> which help to create a spreadsheet application without writing too much code.
+
+<p>AUTHORS: Werner Pamler
+
+<p>LICENSE: See the file COPYING.modifiedLGPL.txt, included in the Lazarus distribution, for details about the license.
+
+<p>EXAMPLE OF USAGE: </p>
+
+<ul class="paragraph_spacing">
+  <li><p>Add a <em>WorkbookSource</em> component to the form.</p></li>
+  <li><p>Add a <em>WorksheetTabControl</em></p></li>
+  <li><p>Add a <em>WorksheetGrid</em> (from unit fpspreadsheetgrid)</p></li>
+  <li><p>Link their <em>WorkbookSource</em> properties to the added <em>WorkbookSource</em> component</p></li>
+  <li><p>Set the property <em>FileName</em> of the <em>WorkbookSource</em> to a spreadsheet file.</p></li>
+</ul>
+
+<p> As a result, the <em>WorksheetTabControl</em> displays tabs for each worksheet in the file, and the <em>WorksheetGrid</em> displays the worksheet according to the selected tab.</p>
+<span id="PasDoc-Uses"></span><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="fpspreadsheetctrls.TsWorkbookSource.html"><code>TsWorkbookSource</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="fpspreadsheetctrls.IsSpreadsheetControl.html"><code>IsSpreadsheetControl</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="fpspreadsheetctrls.TsWorkbookTabControl.html"><code>TsWorkbookTabControl</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="fpspreadsheetctrls.TsWorksheetIndicator.html"><code>TsWorksheetIndicator</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="fpspreadsheetctrls.TsCellEdit.html"><code>TsCellEdit</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="fpspreadsheetctrls.TsCellIndicator.html"><code>TsCellIndicator</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="fpspreadsheetctrls.TsCellCombobox.html"><code>TsCellCombobox</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="fpspreadsheetctrls.TsSpreadsheetInspector.html"><code>TsSpreadsheetInspector</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="fpspreadsheetctrls.html#SpreadsheetFormatInClipboard">SpreadsheetFormatInClipboard</a></strong>: Boolean;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="fpspreadsheetctrls.html#TsCellFormatItem">TsCellFormatItem</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="fpspreadsheetctrls.html#TsColorNameEvent">TsColorNameEvent</a></strong> = procedure (Sender: TObject; AColor: TColor; out AColorName: String) of object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="fpspreadsheetctrls.html#TsFormatTarget">TsFormatTarget</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="fpspreadsheetctrls.html#TsInspectorExpandedNode">TsInspectorExpandedNode</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="fpspreadsheetctrls.html#TsInspectorExpandedNodes">TsInspectorExpandedNodes</a></strong> = set of <a href="fpspreadsheetctrls.html#TsInspectorExpandedNode">TsInspectorExpandedNode</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="fpspreadsheetctrls.html#TsInspectorMode">TsInspectorMode</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="fpspreadsheetctrls.html#TsNotificationItem">TsNotificationItem</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="fpspreadsheetctrls.html#TsNotificationItems">TsNotificationItems</a></strong> = set of <a href="fpspreadsheetctrls.html#TsNotificationItem">TsNotificationItem</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="fpspreadsheetctrls.html#TsWorkbookSourceErrorEvent">TsWorkbookSourceErrorEvent</a></strong> = procedure (Sender: TObject; const AMsg: String) of object;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="fpspreadsheetctrls.html#GUID_SpreadsheetControl">GUID_SpreadsheetControl</a></strong> = '{CBCAAE52-D29E-4D0C-A7F4-1016C873448A}';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="fpspreadsheetctrls.html#UM_VALIDATEINPUT">UM_VALIDATEINPUT</a></strong> = LM_USER + 100;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SpreadsheetFormatInClipboard"></span><code>function <strong>SpreadsheetFormatInClipboard</strong>: Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Returns <code>True</code> if the clipboard contains a format good for pasting into a worksheet grid.</p>
+</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TsCellFormatItem"></span><code><strong>TsCellFormatItem</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="cfiFontName">cfiFontName</span></li>
+<li>
+<span id="cfiFontSize">cfiFontSize</span></li>
+<li>
+<span id="cfiFontColor">cfiFontColor</span></li>
+<li>
+<span id="cfiBackgroundColor">cfiBackgroundColor</span></li>
+<li>
+<span id="cfiBorderColor">cfiBorderColor</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TsColorNameEvent"></span><code><strong>TsColorNameEvent</strong> = procedure (Sender: TObject; AColor: TColor; out AColorName: String) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TsFormatTarget"></span><code><strong>TsFormatTarget</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="ftCell">ftCell</span></li>
+<li>
+<span id="ftRow">ftRow</span></li>
+<li>
+<span id="ftCol">ftCol</span></li>
+<li>
+<span id="ftDefault">ftDefault</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TsInspectorExpandedNode"></span><code><strong>TsInspectorExpandedNode</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Inspector expanded nodes</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="ienFormatSettings">ienFormatSettings</span></li>
+<li>
+<span id="ienConditionalFormats">ienConditionalFormats</span></li>
+<li>
+<span id="ienPageLayout">ienPageLayout</span></li>
+<li>
+<span id="ienFonts">ienFonts</span></li>
+<li>
+<span id="ienFormats">ienFormats</span></li>
+<li>
+<span id="ienEmbeddedObj">ienEmbeddedObj</span></li>
+<li>
+<span id="ienImages">ienImages</span></li>
+<li>
+<span id="ienCryptoInfo">ienCryptoInfo</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TsInspectorExpandedNodes"></span><code><strong>TsInspectorExpandedNodes</strong> = set of <a href="fpspreadsheetctrls.html#TsInspectorExpandedNode">TsInspectorExpandedNode</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TsInspectorMode"></span><code><strong>TsInspectorMode</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Classification of data displayed by the SpreadsheetInspector. Each item can be assigned to a tab of a TabControl.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="imWorkbook">imWorkbook</span></li>
+<li>
+<span id="imWorksheet">imWorksheet</span></li>
+<li>
+<span id="imCellValue">imCellValue</span></li>
+<li>
+<span id="imCellProperties">imCellProperties</span></li>
+<li>
+<span id="imRow">imRow</span></li>
+<li>
+<span id="imCol">imCol</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TsNotificationItem"></span><code><strong>TsNotificationItem</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Describes during communication between WorkbookSource and visual controls which kind of item has changed: the workbook, the worksheet, a cell value, or a cell formatting, etc.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="lniWorkbook">lniWorkbook</span></li>
+<li>
+<span id="lniWorksheet">lniWorksheet</span></li>
+<li>
+<span id="lniWorksheetAdd">lniWorksheetAdd</span></li>
+<li>
+<span id="lniWorksheetRemoving">lniWorksheetRemoving</span></li>
+<li>
+<span id="lniWorksheetRemove">lniWorksheetRemove</span></li>
+<li>
+<span id="lniWorksheetRename">lniWorksheetRename</span></li>
+<li>
+<span id="lniWorksheetZoom">lniWorksheetZoom</span></li>
+<li>
+<span id="lniCell">lniCell</span></li>
+<li>
+<span id="lniSelection">lniSelection</span></li>
+<li>
+<span id="lniAbortSelection">lniAbortSelection</span></li>
+<li>
+<span id="lniRow">lniRow</span></li>
+<li>
+<span id="lniCol">lniCol</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TsNotificationItems"></span><code><strong>TsNotificationItems</strong> = set of <a href="fpspreadsheetctrls.html#TsNotificationItem">TsNotificationItem</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+This set accompanies the notification between WorkbookSource and visual controls and describes which items have changed in the spreadsheet.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TsWorkbookSourceErrorEvent"></span><code><strong>TsWorkbookSourceErrorEvent</strong> = procedure (Sender: TObject; const AMsg: String) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Event handler procedure for displaying a message if an error or warning occurs during reading of a workbook.</p>
+</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GUID_SpreadsheetControl"></span><code><strong>GUID_SpreadsheetControl</strong> = '{CBCAAE52-D29E-4D0C-A7F4-1016C873448A}';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UM_VALIDATEINPUT"></span><code><strong>UM_VALIDATEINPUT</strong> = LM_USER + 100;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+User-defined message for input validation</p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</body></html>

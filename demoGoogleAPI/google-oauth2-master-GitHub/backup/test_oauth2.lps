@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units Count="6">
+      <Unit0>
+        <Filename Value="test_oauth2.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="22"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="frmmain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Mainform"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frmMain"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="8"/>
+        <CursorPos X="22" Y="10"/>
+        <UsageCount Value="22"/>
+        <Bookmarks Count="1">
+          <Item0 X="39" Y="516"/>
+        </Bookmarks>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="google_oauth2.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="272"/>
+        <CursorPos X="54" Y="301"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="README.md"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="34"/>
+        <CursorPos Y="35"/>
+        <UsageCount Value="22"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="google_calendar.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="22"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="google_drive.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="22"/>
+      </Unit5>
+    </Units>
+    <JumpHistory Count="24" HistoryIndex="23">
+      <Position1>
+        <Filename Value="frmmain.pas"/>
+        <Caret Line="525" Column="3" TopLine="501"/>
+      </Position1>
+      <Position2>
+        <Filename Value="frmmain.pas"/>
+        <Caret Line="185" Column="29" TopLine="175"/>
+      </Position2>
+      <Position3>
+        <Filename Value="frmmain.pas"/>
+        <Caret Line="196" Column="46" TopLine="181"/>
+      </Position3>
+      <Position4>
+        <Filename Value="google_oauth2.pas"/>
+        <Caret Column="39"/>
+      </Position4>
+      <Position5>
+        <Filename Value="frmmain.pas"/>
+        <Caret Line="165" Column="42" TopLine="148"/>
+      </Position5>
+      <Position6>
+        <Filename Value="frmmain.pas"/>
+        <Caret Line="279" TopLine="261"/>
+      </Position6>
+      <Position7>
+        <Filename Value="frmmain.pas"/>
+        <Caret Line="155" Column="15" TopLine="143"/>
+      </Position7>
+      <Position8>
+        <Filename Value="frmmain.pas"/>
+        <Caret Line="515" Column="36" TopLine="504"/>
+      </Position8>
+      <Position9>
+        <Filename Value="frmmain.pas"/>
+      </Position9>
+      <Position10>
+        <Filename Value="frmmain.pas"/>
+        <Caret Line="515" Column="43" TopLine="495"/>
+      </Position10>
+      <Position11>
+        <Filename Value="frmmain.pas"/>
+        <Caret Line="516" Column="43" TopLine="496"/>
+      </Position11>
+      <Position12>
+        <Filename Value="frmmain.pas"/>
+        <Caret Line="517" Column="43" TopLine="497"/>
+      </Position12>
+      <Position13>
+        <Filename Value="frmmain.pas"/>
+        <Caret Line="518" Column="43" TopLine="498"/>
+      </Position13>
+      <Position14>
+        <Filename Value="frmmain.pas"/>
+        <Caret Line="515" Column="43" TopLine="498"/>
+      </Position14>
+      <Position15>
+        <Filename Value="frmmain.pas"/>
+        <Caret Line="516" Column="43" TopLine="498"/>
+      </Position15>
+      <Position16>
+        <Filename Value="frmmain.pas"/>
+        <Caret Line="517" Column="43" TopLine="498"/>
+      </Position16>
+      <Position17>
+        <Filename Value="frmmain.pas"/>
+        <Caret Line="518" Column="43" TopLine="498"/>
+      </Position17>
+      <Position18>
+        <Filename Value="frmmain.pas"/>
+        <Caret Line="515" Column="38" TopLine="494"/>
+      </Position18>
+      <Position19>
+        <Filename Value="frmmain.pas"/>
+        <Caret Line="9" Column="48"/>
+      </Position19>
+      <Position20>
+        <Filename Value="frmmain.pas"/>
+        <Caret Line="1656" Column="6" TopLine="1644"/>
+      </Position20>
+      <Position21>
+        <Filename Value="frmmain.pas"/>
+        <Caret Line="9" Column="30"/>
+      </Position21>
+      <Position22>
+        <Filename Value="frmmain.pas"/>
+        <Caret Line="8" Column="12" TopLine="7"/>
+      </Position22>
+      <Position23>
+        <Filename Value="frmmain.pas"/>
+        <Caret Line="9" Column="58" TopLine="2"/>
+      </Position23>
+      <Position24>
+        <Filename Value="frmmain.pas"/>
+        <Caret Line="10" Column="19"/>
+      </Position24>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode="default"/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

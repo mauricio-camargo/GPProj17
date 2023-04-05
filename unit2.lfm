@@ -1,0 +1,26 @@
+object Form2: TForm2
+  Left = 412
+  Height = 758
+  Top = 200
+  Width = 953
+  Caption = 'Form2'
+  ClientHeight = 758
+  ClientWidth = 953
+  DesignTimePPI = 135
+  LCLVersion = '2.2.0.4'
+  object RxSwitch1: TRxSwitch
+    Left = 518
+    Height = 83
+    Hint = 'Ordem alfabética / Prioridades'
+    Top = 180
+    Width = 124
+    Caption = 'zxczxc'
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+    StateOn = sw_on
+    TabOrder = 0
+    TextPosition = tpAbove
+    Style = swsVerticalUD
+  end
+end

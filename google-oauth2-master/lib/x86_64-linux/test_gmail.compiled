@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="/usr/bin/fpc" Date="1625802185"/>
+  <Params Value=" -MObjFPC -Scghi -Cg -O1 -gw2 -godwarfsets -gl -gh -l -vewnhibq -Fi/home/mauricio/Dropbox/Downloads/google-oauth2-master/lib/x86_64-linux -Fu/usr/share/lazarus/2.2.6/lcl/units/x86_64-linux/gtk2 -Fu/usr/share/lazarus/2.2.6/lcl/units/x86_64-linux -Fu/usr/share/lazarus/2.2.6/components/freetype/lib/x86_64-linux -Fu/home/mauricio/.lazarus/onlinepackagemanager/packages/synapse40.1/lib/x86_64-linux -Fu/usr/share/lazarus/2.2.6/components/lazutils/lib/x86_64-linux -Fu/usr/share/lazarus/2.2.6/packager/units/x86_64-linux -Fu/home/mauricio/Dropbox/Downloads/google-oauth2-master/ -FU/home/mauricio/Dropbox/Downloads/google-oauth2-master/lib/x86_64-linux/ -FE/home/mauricio/Dropbox/Downloads/google-oauth2-master/ -o/home/mauricio/Dropbox/Downloads/google-oauth2-master/test_gmail -dLCL -dLCLgtk2 test_gmail.lpr"/>
+  <Complete Value="False"/>
+</CONFIG>

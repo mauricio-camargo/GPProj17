@@ -1,0 +1,131 @@
+object FormInsCont: TFormInsCont
+  Left = 815
+  Height = 749
+  Top = 90
+  Width = 731
+  ActiveControl = Edit1
+  Caption = 'Inserir novo contato'
+  ClientHeight = 749
+  ClientWidth = 731
+  DesignTimePPI = 135
+  OnClose = FormClose
+  Position = poScreenCenter
+  LCLVersion = '2.2.0.4'
+  object BitBtn2: TBitBtn
+    Left = 432
+    Height = 97
+    Top = 600
+    Width = 165
+    Cancel = True
+    DefaultCaption = True
+    Kind = bkCancel
+    Layout = blGlyphTop
+    ModalResult = 2
+    Spacing = 15
+    TabOrder = 0
+  end
+  object BitBtn1: TBitBtn
+    Left = 172
+    Height = 97
+    Top = 598
+    Width = 164
+    Default = True
+    DefaultCaption = True
+    Kind = bkOK
+    Layout = blGlyphTop
+    ModalResult = 1
+    Spacing = 15
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    Left = 45
+    Height = 30
+    Top = 28
+    Width = 204
+    Caption = 'Nome do contato'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -26
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 45
+    Height = 30
+    Top = 124
+    Width = 65
+    Caption = 'Email'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -26
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 45
+    Height = 30
+    Top = 219
+    Width = 84
+    Caption = 'Celular'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -26
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Edit1: TEdit
+    Left = 44
+    Height = 47
+    Top = 66
+    Width = 638
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -26
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 2
+  end
+  object Edit2: TEdit
+    Left = 44
+    Height = 47
+    Top = 161
+    Width = 638
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -26
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 3
+  end
+  object Edit3: TEdit
+    Left = 44
+    Height = 47
+    Top = 256
+    Width = 638
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -26
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 4
+  end
+  object Label4: TLabel
+    Left = 51
+    Height = 30
+    Top = 329
+    Width = 154
+    Caption = 'Observações'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -26
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Memo1: TMemo
+    Left = 54
+    Height = 177
+    Top = 367
+    Width = 629
+    TabOrder = 5
+  end
+end

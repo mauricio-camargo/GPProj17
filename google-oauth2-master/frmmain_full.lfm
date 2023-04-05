@@ -1,0 +1,878 @@
+object Mainform: TMainform
+  Left = 256
+  Height = 1044
+  Top = 195
+  Width = 1720
+  Caption = 'Google OAuth 2.0 testapp'
+  ClientHeight = 1044
+  ClientWidth = 1720
+  DesignTimePPI = 144
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '2.2.6.0'
+  object PageControl6: TPageControl
+    Left = 0
+    Height = 1044
+    Top = 0
+    Width = 1720
+    ActivePage = TabSheet14
+    Align = alClient
+    TabIndex = 0
+    TabOrder = 0
+    object TabSheet14: TTabSheet
+      Caption = 'Google Access'
+      ClientHeight = 1006
+      ClientWidth = 1712
+      object Panel1: TPanel
+        Left = 0
+        Height = 405
+        Top = 0
+        Width = 1712
+        Align = alTop
+        ClientHeight = 405
+        ClientWidth = 1712
+        TabOrder = 0
+        object btGetAccess: TButton
+          Left = 204
+          Height = 38
+          Top = 24
+          Width = 180
+          Caption = 'Get access'
+          OnClick = btGetAccessClick
+          TabOrder = 0
+        end
+        object Memo1: TMemo
+          Left = 16
+          Height = 166
+          Top = 223
+          Width = 1680
+          Align = alBottom
+          BorderSpacing.Around = 15
+          ScrollBars = ssAutoVertical
+          TabOrder = 1
+        end
+        object btRemoveTokens: TButton
+          Left = 408
+          Height = 38
+          Top = 24
+          Width = 220
+          Caption = 'Remove tokens.dat'
+          OnClick = btRemoveTokensClick
+          TabOrder = 2
+        end
+        object btClearLog: TButton
+          Left = 36
+          Height = 38
+          Top = 24
+          Width = 148
+          Caption = 'Clear debug'
+          OnClick = btClearLogClick
+          TabOrder = 3
+        end
+        object CheckGroup1: TCheckGroup
+          Left = 36
+          Height = 144
+          Top = 72
+          Width = 1646
+          Anchors = [akTop, akLeft, akRight]
+          AutoFill = True
+          Caption = 'Access (scope)'
+          ChildSizing.LeftRightSpacing = 6
+          ChildSizing.TopBottomSpacing = 6
+          ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+          ChildSizing.EnlargeVertical = crsHomogenousChildResize
+          ChildSizing.ShrinkHorizontal = crsScaleChilds
+          ChildSizing.ShrinkVertical = crsScaleChilds
+          ChildSizing.Layout = cclTopToBottomThenLeftToRight
+          ChildSizing.ControlsPerLine = 2
+          ClientHeight = 114
+          ClientWidth = 1642
+          ColumnLayout = clVerticalThenHorizontal
+          Columns = 3
+          Items.Strings = (
+            'profile (info only)'
+            'email (info only)'
+            'Access to Mail'
+            'Access to Contacts'
+            'Access to Calendar'
+            'Access to Drive'
+          )
+          TabOrder = 4
+          Data = {
+            06000000020202020202
+          }
+        end
+      end
+      object PageControl1: TPageControl
+        Left = 0
+        Height = 601
+        Top = 405
+        Width = 1712
+        ActivePage = TabSheet9
+        Align = alClient
+        TabIndex = 1
+        TabOrder = 1
+        object TabSheet1: TTabSheet
+          Caption = 'GMail'
+          ClientHeight = 563
+          ClientWidth = 1704
+          object PageControl2: TPageControl
+            Left = 15
+            Height = 533
+            Top = 15
+            Width = 1674
+            ActivePage = TabSheet4
+            Align = alClient
+            BorderSpacing.Around = 15
+            TabIndex = 0
+            TabOrder = 0
+            object TabSheet4: TTabSheet
+              Caption = 'New mail'
+              ClientHeight = 495
+              ClientWidth = 1666
+              object Label1: TLabel
+                Left = 216
+                Height = 34
+                Top = 24
+                Width = 82
+                Alignment = taRightJustify
+                AutoSize = False
+                Caption = 'From'
+                Font.Height = -24
+                Layout = tlCenter
+                ParentColor = False
+                ParentFont = False
+              end
+              object edSender: TEdit
+                Left = 324
+                Height = 33
+                Top = 24
+                Width = 1327
+                Anchors = [akTop, akLeft, akRight]
+                Enabled = False
+                TabOrder = 0
+                Text = '(will be filled in automatically during send or GetAccess)'
+              end
+              object Label2: TLabel
+                Left = 216
+                Height = 34
+                Top = 72
+                Width = 84
+                Alignment = taRightJustify
+                AutoSize = False
+                Caption = 'To'
+                Font.Height = -24
+                Layout = tlCenter
+                ParentColor = False
+                ParentFont = False
+              end
+              object edRecipient: TEdit
+                Left = 324
+                Height = 33
+                Top = 72
+                Width = 1327
+                Anchors = [akTop, akLeft, akRight]
+                TabOrder = 1
+                Text = 'recipient@valid_domain.com'
+              end
+              object Label3: TLabel
+                Left = 216
+                Height = 34
+                Top = 120
+                Width = 82
+                Alignment = taRightJustify
+                AutoSize = False
+                Caption = 'Subject'
+                Font.Height = -24
+                Layout = tlCenter
+                ParentColor = False
+                ParentFont = False
+              end
+              object edSubject: TEdit
+                Left = 324
+                Height = 33
+                Top = 120
+                Width = 1327
+                Anchors = [akTop, akLeft, akRight]
+                TabOrder = 2
+                Text = 'Subject'
+              end
+              object edBody: TMemo
+                Left = 15
+                Height = 367
+                Top = 113
+                Width = 1636
+                Align = alBottom
+                Anchors = [akTop, akLeft, akRight, akBottom]
+                BorderSpacing.Around = 15
+                Lines.Strings = (
+                  'This is the body of the mail'
+                )
+                TabOrder = 3
+              end
+              object btSendMail: TButton
+                Left = 15
+                Height = 132
+                Top = 22
+                Width = 177
+                Caption = 'Send mail'
+                OnClick = btSendMailClick
+                TabOrder = 4
+              end
+            end
+            object TabSheet5: TTabSheet
+              Caption = 'Inbox'
+            end
+          end
+        end
+        object TabSheet9: TTabSheet
+          Caption = 'Contacts'
+          ClientHeight = 563
+          ClientWidth = 1704
+          object PageControl4: TPageControl
+            Left = 15
+            Height = 533
+            Top = 15
+            Width = 1674
+            ActivePage = TabSheet10
+            Align = alClient
+            BorderSpacing.Around = 15
+            TabIndex = 0
+            TabOrder = 0
+            object TabSheet10: TTabSheet
+              Caption = 'New contact'
+              ClientHeight = 495
+              ClientWidth = 1666
+              object Button8: TButton
+                Left = 15
+                Height = 132
+                Top = 24
+                Width = 177
+                Caption = 'not impl. yet'
+                TabOrder = 0
+              end
+            end
+            object TabSheet11: TTabSheet
+              Caption = 'Contacts'
+              ClientHeight = 495
+              ClientWidth = 1666
+              object btGetContacts: TButton
+                Left = 12
+                Height = 38
+                Top = 12
+                Width = 252
+                Caption = 'Get all contacts'
+                OnClick = btGetContactsClick
+                TabOrder = 0
+              end
+              object StringGrid2: TStringGrid
+                Left = 15
+                Height = 432
+                Top = 48
+                Width = 1636
+                Align = alBottom
+                Anchors = [akTop, akLeft, akRight, akBottom]
+                BorderSpacing.Around = 15
+                TabOrder = 1
+              end
+            end
+          end
+        end
+        object TabSheet2: TTabSheet
+          Caption = 'Calendar'
+          ClientHeight = 563
+          ClientWidth = 1704
+          object PageControl3: TPageControl
+            Left = 15
+            Height = 533
+            Top = 15
+            Width = 1674
+            ActivePage = TabSheet6
+            Align = alClient
+            BorderSpacing.Around = 15
+            TabIndex = 0
+            TabOrder = 0
+            object TabSheet6: TTabSheet
+              Caption = 'New appointment'
+              ClientHeight = 495
+              ClientWidth = 1666
+              object Button5: TButton
+                Left = 15
+                Height = 132
+                Top = 24
+                Width = 177
+                Caption = 'Add event'
+                OnClick = Button5Click
+                TabOrder = 0
+              end
+              object edTitle: TEdit
+                Left = 372
+                Height = 33
+                Top = 24
+                Width = 390
+                TabOrder = 1
+                Text = 'edTitle'
+              end
+              object edDescription: TEdit
+                Left = 372
+                Height = 33
+                Top = 69
+                Width = 390
+                TabOrder = 2
+                Text = 'edDescription'
+              end
+              object edStart: TDateEdit
+                Left = 372
+                Height = 33
+                Top = 165
+                Width = 390
+                CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
+                DateOrder = doNone
+                ButtonWidth = 34
+                NumGlyphs = 1
+                MaxLength = 0
+                TabOrder = 4
+                Text = 'edStart'
+              end
+              object edEnd: TDateEdit
+                Left = 372
+                Height = 33
+                Top = 213
+                Width = 390
+                CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
+                DateOrder = doNone
+                ButtonWidth = 34
+                NumGlyphs = 1
+                MaxLength = 0
+                TabOrder = 5
+                Text = 'edEnd'
+              end
+              object edLocation: TEdit
+                Left = 372
+                Height = 33
+                Top = 111
+                Width = 390
+                TabOrder = 3
+                Text = 'edLocation'
+              end
+              object Summary: TLabel
+                Left = 262
+                Height = 25
+                Top = 32
+                Width = 76
+                Caption = 'Summary'
+                ParentColor = False
+              end
+              object Summary1: TLabel
+                Left = 264
+                Height = 25
+                Top = 72
+                Width = 90
+                Caption = 'Description'
+                ParentColor = False
+              end
+              object Summary2: TLabel
+                Left = 262
+                Height = 25
+                Top = 120
+                Width = 67
+                Caption = 'Location'
+                ParentColor = False
+              end
+              object Summary3: TLabel
+                Left = 270
+                Height = 25
+                Top = 168
+                Width = 36
+                Caption = 'Start'
+                ParentColor = False
+              end
+              object Summary4: TLabel
+                Left = 276
+                Height = 25
+                Top = 216
+                Width = 30
+                Caption = 'End'
+                ParentColor = False
+              end
+            end
+            object TabSheet7: TTabSheet
+              Caption = 'Calendar'
+              ClientHeight = 495
+              ClientWidth = 1666
+              object btGetAppointments: TButton
+                Left = 12
+                Height = 38
+                Top = 12
+                Width = 252
+                Caption = 'Get all appointments'
+                OnClick = btGetAppointmentsClick
+                TabOrder = 0
+              end
+              object StringGrid1: TStringGrid
+                Left = 15
+                Height = 432
+                Top = 48
+                Width = 1636
+                Align = alBottom
+                Anchors = [akTop, akLeft, akRight, akBottom]
+                BorderSpacing.Around = 15
+                TabOrder = 1
+                OnDblClick = StringGrid1DblClick
+              end
+              object Edit1: TEdit
+                Left = 1009
+                Height = 33
+                Top = 12
+                Width = 642
+                Anchors = [akTop, akRight]
+                Enabled = False
+                TabOrder = 2
+                Text = 'Edit1'
+              end
+              object Label4: TLabel
+                Left = 962
+                Height = 25
+                Top = 18
+                Width = 38
+                Anchors = [akTop, akRight]
+                Caption = 'Filter'
+                ParentColor = False
+              end
+            end
+          end
+        end
+        object TabSheet3: TTabSheet
+          Caption = 'Drive'
+          ClientHeight = 563
+          ClientWidth = 1704
+          object PageControl5: TPageControl
+            Left = 0
+            Height = 516
+            Top = 0
+            Width = 1701
+            ActivePage = TabSheet13
+            Align = alCustom
+            Anchors = [akTop, akLeft, akRight, akBottom]
+            BorderSpacing.Around = 15
+            TabIndex = 1
+            TabOrder = 0
+            object TabSheet12: TTabSheet
+              Caption = 'Upload'
+              ClientHeight = 478
+              ClientWidth = 1693
+              OnShow = TabSheet12Show
+              object btnSimpleUpload: TButton
+                Left = 12
+                Height = 38
+                Top = 12
+                Width = 201
+                Caption = 'btnSimpleUpload'
+                Enabled = False
+                OnClick = btnSimpleUploadClick
+                TabOrder = 0
+              end
+              object btnUploadWithResume: TButton
+                Left = 228
+                Height = 38
+                Top = 12
+                Width = 201
+                Caption = 'btnUploadWithResume'
+                OnClick = btnUploadWithResumeClick
+                TabOrder = 1
+              end
+              object Edit3: TEdit
+                Left = 672
+                Height = 33
+                Top = 15
+                Width = 1001
+                Anchors = [akTop, akLeft, akRight]
+                TabOrder = 2
+              end
+              object Label6: TLabel
+                Left = 564
+                Height = 25
+                Top = 15
+                Width = 90
+                Caption = 'Description'
+                ParentColor = False
+              end
+              object ListBox1: TListBox
+                Left = 12
+                Height = 402
+                Top = 72
+                Width = 1661
+                Anchors = [akTop, akLeft, akRight, akBottom]
+                ItemHeight = 0
+                TabOrder = 3
+              end
+            end
+            object TabSheet13: TTabSheet
+              Caption = 'Files in Drive'
+              ClientHeight = 478
+              ClientWidth = 1693
+              object btGetFileList: TButton
+                Left = 12
+                Height = 38
+                Top = 12
+                Width = 252
+                Caption = 'Get all Filelist'
+                OnClick = btGetFileListClick
+                TabOrder = 0
+              end
+              object StringGrid3: TStringGrid
+                Left = 15
+                Height = 415
+                Top = 48
+                Width = 1663
+                Align = alBottom
+                Anchors = [akTop, akLeft, akRight, akBottom]
+                AutoFillColumns = True
+                BorderSpacing.Around = 15
+                TabOrder = 1
+                OnDblClick = StringGrid1DblClick
+                OnKeyDown = StringGrid3KeyDown
+                ColWidths = (
+                  96
+                  390
+                  390
+                  390
+                  393
+                )
+              end
+              object Edit2: TEdit
+                Left = 1036
+                Height = 33
+                Top = 12
+                Width = 642
+                Anchors = [akTop, akRight]
+                Enabled = False
+                TabOrder = 2
+                Text = 'Edit1'
+              end
+              object Label5: TLabel
+                Left = 989
+                Height = 25
+                Top = 18
+                Width = 38
+                Anchors = [akTop, akRight]
+                Caption = 'Filter'
+                ParentColor = False
+              end
+              object ckHideFolders: TCheckBox
+                Left = 288
+                Height = 29
+                Top = 12
+                Width = 130
+                Caption = 'Hide Folders'
+                OnClick = ckHideFoldersClick
+                TabOrder = 3
+              end
+              object Button2: TButton
+                Left = 480
+                Height = 38
+                Top = 12
+                Width = 100
+                Caption = 'List 2'
+                Enabled = False
+                OnClick = Button2Click
+                TabOrder = 4
+              end
+            end
+            object TabSheet16: TTabSheet
+              Caption = 'Revisions in File'
+              ClientHeight = 478
+              ClientWidth = 1693
+              object StringGrid4: TStringGrid
+                Left = 15
+                Height = 415
+                Top = 48
+                Width = 1663
+                Align = alBottom
+                Anchors = [akTop, akLeft, akRight, akBottom]
+                AutoFillColumns = True
+                BorderSpacing.Around = 15
+                TabOrder = 0
+                OnDblClick = StringGrid4DblClick
+                OnKeyDown = StringGrid3KeyDown
+                ColWidths = (
+                  96
+                  390
+                  390
+                  390
+                  393
+                )
+              end
+              object Button3: TButton
+                Left = 12
+                Height = 38
+                Top = 15
+                Width = 268
+                Caption = 'Delete selected'
+                OnClick = Button3Click
+                TabOrder = 1
+              end
+              object Button4: TButton
+                Left = 302
+                Height = 38
+                Top = 15
+                Width = 244
+                Caption = 'Upload a revision'
+                OnClick = Button4Click
+                TabOrder = 2
+              end
+            end
+          end
+          object ProgressBar1: TProgressBar
+            Left = 36
+            Height = 30
+            Top = 518
+            Width = 1630
+            Anchors = [akLeft, akRight, akBottom]
+            TabOrder = 1
+          end
+        end
+        object TabSheet8: TTabSheet
+          Caption = 'Debug'
+          ClientHeight = 563
+          ClientWidth = 1704
+          object Memo2: TMemo
+            Left = 15
+            Height = 480
+            Top = 68
+            Width = 1674
+            Align = alClient
+            BorderSpacing.Around = 15
+            Lines.Strings = (
+              'Memo2'
+            )
+            ScrollBars = ssAutoVertical
+            TabOrder = 0
+          end
+          object btClearDebug: TButton
+            Left = 15
+            Height = 38
+            Top = 15
+            Width = 1674
+            Align = alTop
+            BorderSpacing.Around = 15
+            Caption = 'Clear debugscreen'
+            OnClick = btClearDebugClick
+            TabOrder = 1
+          end
+        end
+      end
+    end
+    object TabSheet15: TTabSheet
+      Caption = 'Google Drive'
+      ClientHeight = 1006
+      ClientWidth = 1712
+      object TreeView1: TTreeView
+        Left = 0
+        Height = 868
+        Top = 72
+        Width = 314
+        Align = alLeft
+        RowSelect = True
+        TabOrder = 0
+        OnClick = TreeView1Click
+        Options = [tvoAutoItemHeight, tvoHideSelection, tvoKeepCollapsedNodes, tvoRowSelect, tvoShowButtons, tvoShowLines, tvoShowRoot, tvoToolTips, tvoThemedDraw]
+      end
+      object Panel2: TPanel
+        Left = 0
+        Height = 72
+        Top = 0
+        Width = 1712
+        Align = alTop
+        Caption = 'Panel2'
+        ClientHeight = 72
+        ClientWidth = 1712
+        TabOrder = 1
+        object Button1: TButton
+          Left = 12
+          Height = 38
+          Top = 12
+          Width = 112
+          Caption = 'Connect'
+          OnClick = Button1Click
+          TabOrder = 0
+        end
+        object Edit4: TEdit
+          Left = 1338
+          Height = 33
+          Top = 15
+          Width = 354
+          Anchors = [akTop, akRight]
+          Enabled = False
+          TabOrder = 1
+          Text = 'Edit1'
+        end
+        object Label7: TLabel
+          Left = 1292
+          Height = 25
+          Top = 21
+          Width = 38
+          Anchors = [akTop, akRight]
+          Caption = 'Filter'
+          ParentColor = False
+        end
+        object listmthd: TCheckBox
+          Left = 168
+          Height = 29
+          Top = 20
+          Width = 135
+          Caption = 'list method 2'
+          Checked = True
+          State = cbChecked
+          TabOrder = 2
+        end
+        object Button6: TButton
+          Left = 358
+          Height = 38
+          Top = 12
+          Width = 172
+          Caption = 'Pause / Cancel'
+          OnClick = Button6Click
+          TabOrder = 3
+        end
+      end
+      object StatusBar1: TStatusBar
+        Left = 0
+        Height = 36
+        Top = 970
+        Width = 1712
+        Panels = <>
+      end
+      object Splitter1: TSplitter
+        Left = 314
+        Height = 868
+        Top = 72
+        Width = 22
+      end
+      object ProgressBar2: TProgressBar
+        Left = 0
+        Height = 30
+        Top = 940
+        Width = 1712
+        Align = alBottom
+        TabOrder = 4
+      end
+      object Panel3: TPanel
+        Left = 336
+        Height = 868
+        Top = 72
+        Width = 1376
+        Align = alClient
+        Caption = 'Loading ... please wait'
+        ClientHeight = 868
+        ClientWidth = 1376
+        TabOrder = 5
+        object ListView1: TListView
+          Left = 0
+          Height = 722
+          Top = 8
+          Width = 1375
+          Align = alCustom
+          Anchors = [akTop, akLeft, akRight, akBottom]
+          Columns = <          
+            item
+              Caption = 'Name'
+              Width = 600
+            end          
+            item
+              AutoSize = True
+              Caption = 'Date modified'
+              Width = 139
+            end          
+            item
+              AutoSize = True
+              Caption = 'Type'
+              Width = 63
+            end          
+            item
+              AutoSize = True
+              Caption = 'Size'
+              Width = 56
+            end          
+            item
+              AutoSize = True
+              Caption = 'Original filename'
+              Width = 159
+            end>
+          MultiSelect = True
+          PopupMenu = PopupMenu1
+          ReadOnly = True
+          RowSelect = True
+          TabOrder = 0
+          ViewStyle = vsReport
+          OnClick = ListView1Click
+          OnDblClick = ListView1DblClick
+        end
+        object ListView2: TListView
+          Left = 1
+          Height = 206
+          Top = 661
+          Width = 1374
+          Align = alBottom
+          Columns = <          
+            item
+              AutoSize = True
+              Caption = 'Revision'
+              Width = 91
+            end          
+            item
+              AutoSize = True
+              Caption = 'Date modified'
+              Width = 139
+            end          
+            item
+              AutoSize = True
+              Caption = 'Original filename'
+              Width = 159
+            end          
+            item
+              AutoSize = True
+              Caption = 'Mimetype'
+              Width = 105
+            end>
+          MultiSelect = True
+          ReadOnly = True
+          RowSelect = True
+          TabOrder = 1
+          ViewStyle = vsReport
+          OnDblClick = ListView2DblClick
+        end
+      end
+    end
+  end
+  object ImageList1: TImageList
+    Left = 548
+    Top = 308
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 417
+    Top = 60
+    object MenuItem1: TMenuItem
+      Caption = 'Download File'
+      OnClick = MenuItem1Click
+    end
+    object exportmenu: TMenuItem
+      Tag = 1
+      Caption = 'Export'
+      object MenuItem3: TMenuItem
+        Tag = 2
+        Caption = 'export'
+      end
+    end
+    object MenuItem4: TMenuItem
+      Caption = 'Delete File'
+      OnClick = MenuItem4Click
+    end
+    object MenuItem2: TMenuItem
+      Caption = '(test) show parent'
+      OnClick = MenuItem2Click
+    end
+  end
+end

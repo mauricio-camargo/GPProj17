@@ -1,0 +1,321 @@
+Delivered-To: camargofurg@gmail.com
+Received: by 2002:a05:7300:3006:b0:88:e109:7fdf with SMTP id l6csp1951219dyb;
+        Sat, 7 Jan 2023 16:59:00 -0800 (PST)
+X-Received: by 2002:a05:6402:2927:b0:46f:d386:117d with SMTP id ee39-20020a056402292700b0046fd386117dmr48056839edb.33.1673139540008;
+        Sat, 07 Jan 2023 16:59:00 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1673139539; cv=none;
+        d=google.com; s=arc-20160816;
+        b=nXzaYBN2B2kxb9wplODkvIrhm/IikzKqugFX697rTNE0s5Dz6ML49s88+Bl7A5SZNJ
+         pUV6qJgRgXZqVVh1Y/1wOtfW+4BEVY+ol5By/J95rTmPjDOT3J0kH5B3Lz1o2aIybFIr
+         pm7I7hYDug9aH16Cg5yqvGkoqz1vjlb+wxbcyWDFwqgVZfivcf7LF8ixeFW09Zj+nzzN
+         hNVYuV52NF+rO4eH3VYsraui4hR188JDBMc0hssgOGRYwNVrw2rYcwle6+KZY4kmC95p
+         0D5bufQD+3N0zheRpvMWgWeGkY1OgRzLeqT0AlzPeg/5uED8dSYAddZRawwho2Lj6sNM
+         1i7g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=y2tQ63GPBYxztL7qhjT0dU7V2rbFUyT7gzmUJM/KSsw=;
+        b=wzhGdY6oMNHRQP7OVr0z7/xgulMTZbd9e5EOtWStAOwGhHoBcGc7q7f6mJMq0QjlwX
+         VDHdaYJMdFIFzAlHxJD3bTBhvD7LkjVaJyn6azxeFeM8gYn9ZNYRvvSf3apF95VVlKAR
+         QM7pGRHFlCrvx4Z7ltZ3fUyG+lCV3UOgJsg8kmYLunjc9KoGinPMx5r+yEx5TZa4AxjL
+         uZNExRGh5AfOG/9QA2VT7qc4zNwIZnDJzXfY1JKy3fcEE/8XUaF6r7phzPazyeToOZ8V
+         rxuPvIZ93maqyo8o/UPqs34K3lboWuK/HPjmffr8l8eaH2dzX8vfVsZZYq3XslJf6wVI
+         6WVw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b="BXW/Qxnj";
+       spf=pass (google.com: domain of camargo.ufpr@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=camargo.ufpr@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <camargo.ufpr@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id g6-20020a50d5c6000000b0046b00745ec7sor2467499edj.31.2023.01.07.16.58.59
+        for <camargofurg@gmail.com>
+        (Google Transport Security);
+        Sat, 07 Jan 2023 16:58:59 -0800 (PST)
+Received-SPF: pass (google.com: domain of camargo.ufpr@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b="BXW/Qxnj";
+       spf=pass (google.com: domain of camargo.ufpr@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=camargo.ufpr@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=y2tQ63GPBYxztL7qhjT0dU7V2rbFUyT7gzmUJM/KSsw=;
+        b=BXW/QxnjNgPHnkaFegN01e9/tJGnNBZspMlLq9z4dhgkbeWhKGfAq6u4nlySv1SC6r
+         ODMlPsvdm2qtK9dzb6qQVK88S9BBp7XzXrAzkEIcb6ZyU8obFqNWpxqYfxe+aMSXsJ2p
+         2WODC9IfoIh7rimWDbodkipjI7U4If1vArvcJPifRZdv2L+vKi9eTfdKBj/wdUh301wN
+         FxakZmvMnXbVybvby/XPVqZ1Pteh9vV67cbcfDB78PyENNstfFk0O0acwYr67egI3ktz
+         oaCzngsOYLZSGCvA1kvs+0OkPZ30pH9vGNyys9EuB5VvDrGzvbUWOn8Mz3Sm2dU5xAAJ
+         DIsA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=y2tQ63GPBYxztL7qhjT0dU7V2rbFUyT7gzmUJM/KSsw=;
+        b=mUfdx8bQspexT8L+/Ed95ul2Vtosilf4jvg8QOE/fDMiq4mij7D7TNcegb/jetBTa+
+         MECwxTGOHLQV+Bx4zzORHUqeJWhtJIwVVRe3Z6RCIyHLYrejfU20LJrvR4wE9pzlfMml
+         ylJQlbLX1INC5dlV8MEhSeiBPzDluWziSpD5BbmTmNAKgMeorVoPFBmhTS4g4WKmvMmC
+         O4yiQzOVVj0adhVCpKzOfxRm1lrZPyOUFthlqrq82AWeoBIImtLXDGO2rXhlCDa1TMIx
+         hdV9C2byDpsniOGjkHQAxM6PlbB9tBapNTWF/Gflk4/IDeveUQ0QYsLGvkzGZXSO80EW
+         cpFw==
+X-Gm-Message-State: AFqh2kqASj0a80Y7c97hjfhR62jN9GOZsqMPclJ+01lXh4yR/vKDxIEW
+	AC6ZkwfAkjWs0M/ryH6q0gj7N9q8Z9OQKyynHuocAzWb
+X-Google-Smtp-Source: AMrXdXuWcLTXGU+3rHsTmoccGOhzI2NNYUl3QLhl5L+FVkXbgx953jVlvFjRRq9mmCc8/BKkxW4qFgSPUGgs1L/Tf4M=
+X-Received: by 2002:a05:6402:548e:b0:479:836f:fd41 with SMTP id
+ fg14-20020a056402548e00b00479836ffd41mr7035166edb.19.1673139539093; Sat, 07
+ Jan 2023 16:58:59 -0800 (PST)
+MIME-Version: 1.0
+References: <iDGJQztCQD2QgQfVzec_sw@geopod-ismtpd-1-6> <CAN5XZ_O1j1y2XYTux0bBGeZx89+BKASM-a6A6R2ucrvpELk7dQ@mail.gmail.com>
+In-Reply-To: <CAN5XZ_O1j1y2XYTux0bBGeZx89+BKASM-a6A6R2ucrvpELk7dQ@mail.gmail.com>
+From: =?UTF-8?Q?Maur=C3=ADcio_Camargo?= <camargo.ufpr@gmail.com>
+Date: Sat, 7 Jan 2023 21:58:22 -0300
+Message-ID: <CANEUzYvaHr1ZTz8oeh4+g3cP_YUUhF1_2mrbAOexHx3raHBM3g@mail.gmail.com>
+Subject: Fwd: Statistical Methods Series: Zero Inflated GLM and GLMM Confirmation
+To: camargofurg@gmail.com
+Content-Type: multipart/alternative; boundary="000000000000e32d7505f1b627cb"
+
+--000000000000e32d7505f1b627cb
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+---------- Forwarded message ---------
+De: Mauricio Camargo FURG <camargofurg@gmail.com>
+Date: s=C3=A1b., 7 de jan. de 2023 =C3=A0s 21:57
+Subject: Fwd: Statistical Methods Series: Zero Inflated GLM and GLMM
+Confirmation
+To: Maur=C3=ADcio Camargo <camargo.ufpr@gmail.com>
+
+
+
+
+---------- Forwarded message ---------
+De: Ecological Forecasting Initiative <no-reply@zoom.us>
+Date: sex., 6 de jan. de 2023 =C3=A0s 16:19
+Subject: Statistical Methods Series: Zero Inflated GLM and GLMM Confirmatio=
+n
+To: <camargofurg@gmail.com>
+
+
+Hi Mauricio Camargo,
+
+Thank you for registering for "Statistical Methods Series: Zero Inflated
+GLM and GLMM".
+The code that will be shared during the call will be made available within
+24 hours of the seminar at this GitHub repository:
+https://github.com/eco4cast/Statistical-Methods-Seminar-Series
+If you want to follow the code during the presentation, we strongly
+recommend that you download the code prior to the call.
+If you are unable to attend the call, we will make a recording available on
+the seminar webpage (
+https://ecoforecast.org/workshops/statistical-methods-seminar-series/).
+If we reach our maximum Zoom capacity, the presentation will also be
+live-streamed on the EFI YouTube channel (
+https://www.youtube.com/channel/UCZ2KQdo1-FhNRtEBYxai5Aw).
+If you have questions, please contact: eco4cast.initiative@gmail.com
+
+Date and Time: Jan 9, 2023 12:00 PM Eastern Time (US and Canada)
+
+Join from a PC, Mac, iPad, iPhone or Android device:
+Please click this URL to join.
+https://notredame.zoom.us/w/94710943665?tk=3DOIjOwmsygRmp61psOk1IZF73WxjpHS=
+kJcIP1eUvkRRE.DQMAAAAWDTZPsRY4MXhrRnFLT1FubV9qSlliX3RyRXdRAAAAAAAAAAAAAAAAA=
+AAAAAAAAAAAAA&pwd=3DSDZkSFRWclFITUxOWVgzbmZiWXhRdz09&uuid=3DWN_gVITCvvJQd6v=
+KwCZUwTFnw
+Note: This link should not be shared with others; it is unique to you.
+Password: 868078
+Add to Calendar
+<https://notredame.zoom.us/webinar/tJAqdumhqjgsHNGl0NK0bQP4DQcAlLvJpc72/ics=
+?user_id=3DvdtwRKUmCzoizXnNFVdKnQQBuDhfAdmh-mRV_eInGILE2hRRLQ4.g8PJnPaVYEkF=
+5ZVc&type=3Dicalendar>
+  Add to Google Calendar
+<https://notredame.zoom.us/webinar/tJAqdumhqjgsHNGl0NK0bQP4DQcAlLvJpc72/cal=
+endar/google/add?user_id=3DDijziG4PMpaLT1P6uxPPwPb9UZxDA2oIV1w0HoUu9WqWXi5A=
+C5g.Uq1V87SaIfmw432m&type=3Dgoogle>
+  Add to Yahoo Calendar
+<https://notredame.zoom.us/webinar/tJAqdumhqjgsHNGl0NK0bQP4DQcAlLvJpc72/ics=
+?user_id=3DJZn_1QFp-MobJ9gbUC5lztBYNgtq6fgYkDT9fr5EpCpFWkJrBN0.GTFGUDl5VW8R=
+26W5&type=3Dyahoo>
+
+
+Or iPhone one-tap:
+US: +16469313860,,94710943665# or +16694449171,,94710943665#
+
+Or Telephone:
+Dial (for higher quality, dial a number based on your current location):
+
+US: +1 646 931 3860 or +1 669 444 9171 or +1 669 900 6833 or +1 689 278
+1000 or +1 719 359 4580 or +1 253 205 0468 or +1 253 215 8782 or +1 301 715
+8592 or +1 305 224 1968 or +1 309 205 3325 or +1 312 626 6799 or +1 346 248
+7799 or +1 360 209 5623 or +1 386 347 5053 or +1 507 473 4847 or +1 564 217
+2000 or +1 646 558 8656
+Webinar ID: 947 1094 3665
+Password: 868078
+International numbers available: https://notredame.zoom.us/u/abVrisSbB6
+
+
+
+If you need to cancel your registration you can do so here
+<https://notredame.zoom.us/webinar/register/tJAqdumhqjgsHNGl0NK0bQP4DQcAlLv=
+Jpc72/success?act=3Dcancel&user_id=3D81xkFqKOQnm_jJYb_trEwQ>.
+[image: Webinar logo]
+
+
+
+--=20
+
+
+
+*-Prof. Maur=C3=ADcio Garcia de Camargo*Laborat=C3=B3rio de Ecologia de Inv=
+ertebrados
+Bent=C3=B4nicos (53) 3233-6750
+PPGOB-IO <https://ppgob.furg.br/pt/> e PPGAMB-IMEF
+<https://ppgambientometria.furg.br/>.
+
+Instituto de Oceanografia (IO)
+
+www.oceano.furg.br <http://oceano.furg.br>
+
+--000000000000e32d7505f1b627cb
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><br><br><div class=3D"gmail_quote"><div dir=3D"ltr" class=
+=3D"gmail_attr">---------- Forwarded message ---------<br>De: <strong class=
+=3D"gmail_sendername" dir=3D"auto">Mauricio Camargo FURG</strong> <span dir=
+=3D"auto">&lt;<a href=3D"mailto:camargofurg@gmail.com">camargofurg@gmail.co=
+m</a>&gt;</span><br>Date: s=C3=A1b., 7 de jan. de 2023 =C3=A0s 21:57<br>Sub=
+ject: Fwd: Statistical Methods Series: Zero Inflated GLM and GLMM Confirmat=
+ion<br>To: Maur=C3=ADcio Camargo &lt;<a href=3D"mailto:camargo.ufpr@gmail.c=
+om">camargo.ufpr@gmail.com</a>&gt;<br></div><br><br><div dir=3D"ltr"><br><b=
+r><div class=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_attr">--------=
+-- Forwarded message ---------<br>De: <strong class=3D"gmail_sendername" di=
+r=3D"auto">Ecological Forecasting Initiative</strong> <span dir=3D"auto">&l=
+t;<a href=3D"mailto:no-reply@zoom.us" target=3D"_blank">no-reply@zoom.us</a=
+>&gt;</span><br>Date: sex., 6 de jan. de 2023 =C3=A0s 16:19<br>Subject: Sta=
+tistical Methods Series: Zero Inflated GLM and GLMM Confirmation<br>To:  &l=
+t;<a href=3D"mailto:camargofurg@gmail.com" target=3D"_blank">camargofurg@gm=
+ail.com</a>&gt;<br></div><br><br><div>
+
+=09
+=09
+
+<div>=20
+<table style=3D"width:100%;background-color:#fff">
+<tbody><tr>
+	<td style=3D"width:75%">Hi Mauricio Camargo,  <br>
+<br>
+Thank you for registering for &quot;Statistical Methods Series: Zero Inflat=
+ed GLM and GLMM&quot;.
+<br>
+The code that will be shared during the call will be made available within =
+24 hours of the seminar at this GitHub repository: <a href=3D"https://githu=
+b.com/eco4cast/Statistical-Methods-Seminar-Series" target=3D"_blank">https:=
+//github.com/eco4cast/Statistical-Methods-Seminar-Series</a><br>
+If you want to follow the code during the presentation, we strongly recomme=
+nd that you download the code prior to the call.<br>
+If you are unable to attend the call, we will make a recording available on=
+ the seminar webpage (<a href=3D"https://ecoforecast.org/workshops/statisti=
+cal-methods-seminar-series/" target=3D"_blank">https://ecoforecast.org/work=
+shops/statistical-methods-seminar-series/</a>).<br>
+If we reach our maximum Zoom capacity, the presentation will also be live-s=
+treamed on the EFI YouTube channel (<a href=3D"https://www.youtube.com/chan=
+nel/UCZ2KQdo1-FhNRtEBYxai5Aw" target=3D"_blank">https://www.youtube.com/cha=
+nnel/UCZ2KQdo1-FhNRtEBYxai5Aw</a>).
+<br>
+If you have questions, please contact: <a href=3D"mailto:eco4cast.initiativ=
+e@gmail.com" target=3D"_blank">eco4cast.initiative@gmail.com</a><br>
+<br>
+Date and Time: Jan 9, 2023 12:00 PM Eastern Time (US and Canada) <br>
+<br>
+Join from a PC, Mac, iPad, iPhone or Android device: <br>
+<div>
+Please click this URL to join. <a href=3D"https://notredame.zoom.us/w/94710=
+943665?tk=3DOIjOwmsygRmp61psOk1IZF73WxjpHSkJcIP1eUvkRRE.DQMAAAAWDTZPsRY4MXh=
+rRnFLT1FubV9qSlliX3RyRXdRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&amp;pwd=3DSDZkSFRWc=
+lFITUxOWVgzbmZiWXhRdz09&amp;uuid=3DWN_gVITCvvJQd6vKwCZUwTFnw" target=3D"_bl=
+ank">https://notredame.zoom.us/w/94710943665?tk=3DOIjOwmsygRmp61psOk1IZF73W=
+xjpHSkJcIP1eUvkRRE.DQMAAAAWDTZPsRY4MXhrRnFLT1FubV9qSlliX3RyRXdRAAAAAAAAAAAA=
+AAAAAAAAAAAAAAAAAA&amp;pwd=3DSDZkSFRWclFITUxOWVgzbmZiWXhRdz09&amp;uuid=3DWN=
+_gVITCvvJQd6vKwCZUwTFnw</a><br>
+Note: This link should not be shared with others; it is unique to you.<br>
+Password: 868078<br>
+
+
+    <a href=3D"https://notredame.zoom.us/webinar/tJAqdumhqjgsHNGl0NK0bQP4DQ=
+cAlLvJpc72/ics?user_id=3DvdtwRKUmCzoizXnNFVdKnQQBuDhfAdmh-mRV_eInGILE2hRRLQ=
+4.g8PJnPaVYEkF5ZVc&amp;type=3Dicalendar" target=3D"_blank">Add to Calendar<=
+/a> =C2=A0  <a href=3D"https://notredame.zoom.us/webinar/tJAqdumhqjgsHNGl0N=
+K0bQP4DQcAlLvJpc72/calendar/google/add?user_id=3DDijziG4PMpaLT1P6uxPPwPb9UZ=
+xDA2oIV1w0HoUu9WqWXi5AC5g.Uq1V87SaIfmw432m&amp;type=3Dgoogle" target=3D"_bl=
+ank">Add to Google Calendar</a> =C2=A0 <a href=3D"https://notredame.zoom.us=
+/webinar/tJAqdumhqjgsHNGl0NK0bQP4DQcAlLvJpc72/ics?user_id=3DJZn_1QFp-MobJ9g=
+bUC5lztBYNgtq6fgYkDT9fr5EpCpFWkJrBN0.GTFGUDl5VW8R26W5&amp;type=3Dyahoo" tar=
+get=3D"_blank">Add to Yahoo Calendar</a>=20
+</div>
+<br>
+<br>
+Or iPhone one-tap:<br>
+<div>
+    US: +16469313860,,94710943665#  or +16694449171,,94710943665#=20
+</div>
+<br>
+Or Telephone:<br>
+<div>
+    Dial (for higher quality, dial a number based on your current location)=
+:
+	=C2=A0=C2=A0=C2=A0=C2=A0<br>US: +1 646 931 3860  or +1 669 444 9171  or +1=
+ 669 900 6833  or +1 689 278 1000  or +1 719 359 4580  or +1 253 205 0468  =
+or +1 253 215 8782  or +1 301 715 8592  or +1 305 224 1968  or +1 309 205 3=
+325  or +1 312 626 6799  or +1 346 248 7799  or +1 360 209 5623  or +1 386 =
+347 5053  or +1 507 473 4847  or +1 564 217 2000  or +1 646 558 8656=20
+	<br>
+    Webinar ID: 947 1094 3665 <br>
+    Password: 868078<br>
+    International numbers available: <a href=3D"https://notredame.zoom.us/u=
+/abVrisSbB6" target=3D"_blank">https://notredame.zoom.us/u/abVrisSbB6</a>
+</div>
+<br>
+<br>
+             =20
+<br>
+If you need to cancel your registration you can do so <a href=3D"https://no=
+tredame.zoom.us/webinar/register/tJAqdumhqjgsHNGl0NK0bQP4DQcAlLvJpc72/succe=
+ss?act=3Dcancel&amp;user_id=3D81xkFqKOQnm_jJYb_trEwQ" target=3D"_blank">her=
+e</a>.
+</td>=09
+	<td style=3D"vertical-align:top">
+	<img src=3D"http://notredame.zoom.us/w_p/94710943665/9ceacc4f-491c-4970-ad=
+8a-36a5d5864f60.png" alt=3D"Webinar logo">
+	</td>
+</tr>
+
+<tr style=3D"height:40px">
+	<td>=C2=A0</td>
+	<td>=C2=A0</td>
+</tr>
+</tbody></table>
+</div>
+
+</div></div><br clear=3D"all"><div><br></div>-- <br><div dir=3D"ltr" data-s=
+martmail=3D"gmail_signature"><div dir=3D"ltr"><div><div dir=3D"ltr"><div><d=
+iv dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><p><span style=3D"font-fam=
+ily:verdana,geneva,sans-serif;font-size:8pt"><span style=3D"color:rgb(0,0,0=
+)"><strong>-<br>Prof. Maur=C3=ADcio Garcia de Camargo<br></strong></span></=
+span><span style=3D"font-family:verdana,geneva,sans-serif;font-size:10.6667=
+px">Laborat=C3=B3rio de Ecologia de Invertebrados Bent=C3=B4nicos=C2=A0</sp=
+an><span style=3D"font-family:verdana,geneva,sans-serif;font-size:10.6667px=
+">(53) 3233-6750</span><span style=3D"font-family:verdana,geneva,sans-serif=
+;font-size:10.6667px"><br></span><span style=3D"font-family:verdana,geneva,=
+sans-serif;font-size:8pt"><a href=3D"https://ppgob.furg.br/pt/" target=3D"_=
+blank">PPGOB-IO</a> e <a href=3D"https://ppgambientometria.furg.br/" target=
+=3D"_blank">PPGAMB-IMEF</a>.</span></p><p><span style=3D"font-family:verdan=
+a,geneva,sans-serif;font-size:8pt">Instituto de Oceanografia (IO)</span></p=
+><p><a href=3D"http://oceano.furg.br" style=3D"font-family:verdana,geneva,s=
+ans-serif;font-size:8pt" target=3D"_blank">www.oceano.furg.br</a></p><p><sp=
+an style=3D"font-family:verdana,geneva,sans-serif;font-size:8pt"><img src=
+=3D"http://cdn.furg.br/images/logo.jpg" alt=3D"" width=3D"107,387" height=
+=3D"42,52"><br></span></p></div></div></div></div></div></div></div></div><=
+/div>
+</div></div>
+
+--000000000000e32d7505f1b627cb--

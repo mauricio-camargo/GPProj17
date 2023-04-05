@@ -1,0 +1,1201 @@
+--------------------------------------------------------------------------------
+Request : POST https://accounts.google.com/o/oauth2/token
+Headers:
+Content-Type:application/x-www-form-urlencoded
+Body:
+client_id=502080815718-1r1iseasap01bovrrs35rrq9053sfke9.apps.googleusercontent.com&client_secret=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&grant_type=authorization_code&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&code=4%2F1AX4XfWgm7gNCZAg4BNHaczWvtXJC6ZZ3mH5AjpVQ46jPt9uPW7kNWasJW44
+--------------------------------------------------------------------------------
+Request : POST https://accounts.google.com/o/oauth2/token
+Headers:
+Content-Type:application/x-www-form-urlencoded
+Body:
+client_id=502080815718-1r1iseasap01bovrrs35rrq9053sfke9.apps.googleusercontent.com&client_secret=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&grant_type=authorization_code&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&code=4%2F1AX4XfWgm7gNCZAg4BNHaczWvtXJC6ZZ3mH5AjpVQ46jPt9uPW7kNWasJW44
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+Date: Fri, 22 Apr 2022 02:31:35 GMT
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Vary: X-Origin
+Vary: Referer
+Server: scaffolding on HTTPServer2
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+  "access_token": "ya29.A0ARrdaM--3xCy-Bhj7TUqzCLA89EcdjVJILJ83JBaUQhw6HmTktI2KrC48gCg1U-XfxvcJDdpG_lKBcJrSkRniP0DZZgFGL-0Bdpys_LhKTf0FZo54fuxWmOXRpEyiBY9CLlb1l_lIPLSUAmS29RzBlodv_2J",
+  "expires_in": 3599,
+  "refresh_token": "1//0hWHF5q_uupA8CgYIARAAGBESNwF-L9IruKYImrOkppgHLRjVAwrMrkeODJeTCEn2TE4CqvcDNREwJu36WpfR_x2dA5awVphxGtk",
+  "scope": "https://www.googleapis.com/auth/tasks",
+  "token_type": "Bearer"
+}
+--------------------------------------------------------------------------------
+Request : GET https://www.googleapis.com/tasks/v1/users/@me/lists
+Headers:
+Authorization: Bearer ya29.A0ARrdaM--3xCy-Bhj7TUqzCLA89EcdjVJILJ83JBaUQhw6HmTktI2KrC48gCg1U-XfxvcJDdpG_lKBcJrSkRniP0DZZgFGL-0Bdpys_LhKTf0FZo54fuxWmOXRpEyiBY9CLlb1l_lIPLSUAmS29RzBlodv_2J
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+ETag: "LTExODE5ODg1NzU"
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Date: Fri, 22 Apr 2022 02:31:36 GMT
+Server: ESF
+Content-Length: 707
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Connection: close
+Body:
+{
+  "kind": "tasks#taskLists",
+  "etag": "\"LTExODE5ODg1NzU\"",
+  "items": [
+    {
+      "kind": "tasks#taskList",
+      "id": "MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDow",
+      "etag": "\"LTExMTE5NTEyODk\"",
+      "title": "Maurício's list",
+      "updated": "2019-07-04T16:02:24.707Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/users/@me/lists/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDow"
+    },
+    {
+      "kind": "tasks#taskList",
+      "id": "MDM5NjI4MzQ3ODgyNTIwODgxMDM6MTow",
+      "etag": "\"LTExMTE5NTEyODk\"",
+      "title": "Mobile List",
+      "updated": "2019-07-04T16:02:24.707Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/users/@me/lists/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MTow"
+    }
+  ]
+}
+
+--------------------------------------------------------------------------------
+Request : GET https://www.googleapis.com/tasks/v1/lists/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDow/tasks
+Headers:
+Authorization: Bearer ya29.A0ARrdaM--3xCy-Bhj7TUqzCLA89EcdjVJILJ83JBaUQhw6HmTktI2KrC48gCg1U-XfxvcJDdpG_lKBcJrSkRniP0DZZgFGL-0Bdpys_LhKTf0FZo54fuxWmOXRpEyiBY9CLlb1l_lIPLSUAmS29RzBlodv_2J
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+ETag: "LTExMTE5NTEyODk"
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Date: Fri, 22 Apr 2022 02:31:44 GMT
+Server: ESF
+Content-Length: 6856
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Connection: close
+Body:
+{
+  "kind": "tasks#tasks",
+  "etag": "\"LTExMTE5NTEyODk\"",
+  "items": [
+    {
+      "kind": "tasks#task",
+      "id": "MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDoxMTExNjYzODM",
+      "etag": "\"LTExMTE5NTEzMjA\"",
+      "title": "FTP CEM",
+      "updated": "2019-07-04T16:02:24.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDow/tasks/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDoxMTExNjYzODM",
+      "position": "00000000000000000002",
+      "status": "needsAction",
+      "links": []
+    },
+    {
+      "kind": "tasks#task",
+      "id": "MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDoxMjA2NTIyNDcx",
+      "etag": "\"LTExMTE5NTEzMjA\"",
+      "title": "",
+      "updated": "2019-07-04T16:02:24.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDow/tasks/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDoxMjA2NTIyNDcx",
+      "position": "00000000000000000003",
+      "status": "needsAction",
+      "links": []
+    },
+    {
+      "kind": "tasks#task",
+      "id": "MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDoxMzAwMTI3MzI0",
+      "etag": "\"LTExMTE5NTEzMjA\"",
+      "title": "Lates",
+      "updated": "2019-07-04T16:02:24.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDow/tasks/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDoxMzAwMTI3MzI0",
+      "position": "00000000000000000012",
+      "status": "needsAction",
+      "links": []
+    },
+    {
+      "kind": "tasks#task",
+      "id": "MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDoxODY4NDU4NTAy",
+      "etag": "\"LTExMTE5NTEzMjA\"",
+      "title": "Irene",
+      "updated": "2019-07-04T16:02:24.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDow/tasks/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDoxODY4NDU4NTAy",
+      "position": "00000000000000000006",
+      "status": "needsAction",
+      "links": []
+    },
+    {
+      "kind": "tasks#task",
+      "id": "MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDoyMDE4NTI3ODE4",
+      "etag": "\"LTExMTE5NTEzMjA\"",
+      "title": "http://asboasnovas.com/coletanea/frances-de-graca",
+      "updated": "2019-07-04T16:02:24.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDow/tasks/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDoyMDE4NTI3ODE4",
+      "position": "00000000000000000005",
+      "status": "needsAction",
+      "links": []
+    },
+    {
+      "kind": "tasks#task",
+      "id": "MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDoyMTMwMjcwNjEw",
+      "etag": "\"LTExMTE5NTEzMjA\"",
+      "title": "Siapnet data nascimento",
+      "updated": "2019-07-04T16:02:24.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDow/tasks/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDoyMTMwMjcwNjEw",
+      "position": "00000000000000000013",
+      "status": "needsAction",
+      "links": []
+    },
+    {
+      "kind": "tasks#task",
+      "id": "MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDoyMTc0NDY2ODg",
+      "etag": "\"LTExMTE5NTEzMjA\"",
+      "title": "ArtigoDaia",
+      "updated": "2019-07-04T16:02:24.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDow/tasks/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDoyMTc0NDY2ODg",
+      "position": "00000000000000000009",
+      "status": "needsAction",
+      "links": []
+    },
+    {
+      "kind": "tasks#task",
+      "id": "MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDoyNjQ2NDg3NzA",
+      "etag": "\"LTExMTE5NTEzMjA\"",
+      "title": "Fichas Lilian",
+      "updated": "2019-07-04T16:02:24.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDow/tasks/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDoyNjQ2NDg3NzA",
+      "position": "00000000000000000011",
+      "status": "needsAction",
+      "links": []
+    },
+    {
+      "kind": "tasks#task",
+      "id": "MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDozMDg0MzM1MDI",
+      "etag": "\"LTExMTE5NTEzMjA\"",
+      "title": "QBS",
+      "updated": "2019-07-04T16:02:24.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDow/tasks/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDozMDg0MzM1MDI",
+      "position": "00000000000000000008",
+      "status": "needsAction",
+      "links": []
+    },
+    {
+      "kind": "tasks#task",
+      "id": "MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDo0ODc3NjE5MzU",
+      "etag": "\"LTExMTE5NTEzMjA\"",
+      "title": "Danilo",
+      "updated": "2019-07-04T16:02:24.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDow/tasks/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDo0ODc3NjE5MzU",
+      "position": "00000000000000000001",
+      "status": "needsAction",
+      "links": []
+    },
+    {
+      "kind": "tasks#task",
+      "id": "MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDo1ODgwOTE3OTU",
+      "etag": "\"LTExMTE5NTEzMjA\"",
+      "title": "",
+      "updated": "2019-07-04T16:02:24.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDow/tasks/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDo1ODgwOTE3OTU",
+      "position": "00000000000000000014",
+      "status": "needsAction",
+      "links": []
+    },
+    {
+      "kind": "tasks#task",
+      "id": "MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDo2MTYwNTY2OTc",
+      "etag": "\"LTExMTE5NTEzMjA\"",
+      "title": "Mauro cex-cem",
+      "updated": "2019-07-04T16:02:24.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDow/tasks/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDo2MTYwNTY2OTc",
+      "position": "00000000000000000004",
+      "status": "needsAction",
+      "links": []
+    },
+    {
+      "kind": "tasks#task",
+      "id": "MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDo2ODMyMjQzMzk",
+      "etag": "\"LTExMTE5NTEzMjA\"",
+      "title": "ISabel (47)9945-6109 ",
+      "updated": "2019-07-04T16:02:24.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDow/tasks/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDo2ODMyMjQzMzk",
+      "position": "00000000000000000000",
+      "status": "needsAction",
+      "links": []
+    },
+    {
+      "kind": "tasks#task",
+      "id": "MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDo3MDQ1MDM2NTg",
+      "etag": "\"LTExMTE5NTEzMjA\"",
+      "title": "Escrever alunos multivar",
+      "updated": "2019-07-04T16:02:24.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDow/tasks/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDo3MDQ1MDM2NTg",
+      "position": "00000000000000000007",
+      "status": "needsAction",
+      "links": []
+    },
+    {
+      "kind": "tasks#task",
+      "id": "MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDo3NjE3NjE0OTQ",
+      "etag": "\"LTExMTE5NTEzMjA\"",
+      "title": "Carga patrimomnial",
+      "updated": "2019-07-04T16:02:24.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDow/tasks/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDo3NjE3NjE0OTQ",
+      "position": "00000000000000000010",
+      "status": "needsAction",
+      "links": []
+    }
+  ]
+}
+
+--------------------------------------------------------------------------------
+Request : GET https://www.googleapis.com/tasks/v1/lists/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MTow/tasks
+Headers:
+Authorization: Bearer ya29.A0ARrdaM--3xCy-Bhj7TUqzCLA89EcdjVJILJ83JBaUQhw6HmTktI2KrC48gCg1U-XfxvcJDdpG_lKBcJrSkRniP0DZZgFGL-0Bdpys_LhKTf0FZo54fuxWmOXRpEyiBY9CLlb1l_lIPLSUAmS29RzBlodv_2J
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+ETag: "LTExMTE5NTEyODk"
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Date: Fri, 22 Apr 2022 02:31:56 GMT
+Server: ESF
+Content-Length: 76
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Connection: close
+Body:
+{
+  "kind": "tasks#tasks",
+  "etag": "\"LTExMTE5NTEyODk\"",
+  "items": []
+}
+
+--------------------------------------------------------------------------------
+Request : GET https://www.googleapis.com/tasks/v1/lists/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDow/tasks
+Headers:
+Authorization: Bearer ya29.A0ARrdaM--3xCy-Bhj7TUqzCLA89EcdjVJILJ83JBaUQhw6HmTktI2KrC48gCg1U-XfxvcJDdpG_lKBcJrSkRniP0DZZgFGL-0Bdpys_LhKTf0FZo54fuxWmOXRpEyiBY9CLlb1l_lIPLSUAmS29RzBlodv_2J
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+ETag: "LTExMTE5NTEyODk"
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Date: Fri, 22 Apr 2022 02:32:02 GMT
+Server: ESF
+Content-Length: 6856
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Connection: close
+Body:
+{
+  "kind": "tasks#tasks",
+  "etag": "\"LTExMTE5NTEyODk\"",
+  "items": [
+    {
+      "kind": "tasks#task",
+      "id": "MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDoxMTExNjYzODM",
+      "etag": "\"LTExMTE5NTEzMjA\"",
+      "title": "FTP CEM",
+      "updated": "2019-07-04T16:02:24.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDow/tasks/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDoxMTExNjYzODM",
+      "position": "00000000000000000002",
+      "status": "needsAction",
+      "links": []
+    },
+    {
+      "kind": "tasks#task",
+      "id": "MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDoxMjA2NTIyNDcx",
+      "etag": "\"LTExMTE5NTEzMjA\"",
+      "title": "",
+      "updated": "2019-07-04T16:02:24.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDow/tasks/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDoxMjA2NTIyNDcx",
+      "position": "00000000000000000003",
+      "status": "needsAction",
+      "links": []
+    },
+    {
+      "kind": "tasks#task",
+      "id": "MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDoxMzAwMTI3MzI0",
+      "etag": "\"LTExMTE5NTEzMjA\"",
+      "title": "Lates",
+      "updated": "2019-07-04T16:02:24.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDow/tasks/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDoxMzAwMTI3MzI0",
+      "position": "00000000000000000012",
+      "status": "needsAction",
+      "links": []
+    },
+    {
+      "kind": "tasks#task",
+      "id": "MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDoxODY4NDU4NTAy",
+      "etag": "\"LTExMTE5NTEzMjA\"",
+      "title": "Irene",
+      "updated": "2019-07-04T16:02:24.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDow/tasks/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDoxODY4NDU4NTAy",
+      "position": "00000000000000000006",
+      "status": "needsAction",
+      "links": []
+    },
+    {
+      "kind": "tasks#task",
+      "id": "MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDoyMDE4NTI3ODE4",
+      "etag": "\"LTExMTE5NTEzMjA\"",
+      "title": "http://asboasnovas.com/coletanea/frances-de-graca",
+      "updated": "2019-07-04T16:02:24.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDow/tasks/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDoyMDE4NTI3ODE4",
+      "position": "00000000000000000005",
+      "status": "needsAction",
+      "links": []
+    },
+    {
+      "kind": "tasks#task",
+      "id": "MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDoyMTMwMjcwNjEw",
+      "etag": "\"LTExMTE5NTEzMjA\"",
+      "title": "Siapnet data nascimento",
+      "updated": "2019-07-04T16:02:24.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDow/tasks/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDoyMTMwMjcwNjEw",
+      "position": "00000000000000000013",
+      "status": "needsAction",
+      "links": []
+    },
+    {
+      "kind": "tasks#task",
+      "id": "MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDoyMTc0NDY2ODg",
+      "etag": "\"LTExMTE5NTEzMjA\"",
+      "title": "ArtigoDaia",
+      "updated": "2019-07-04T16:02:24.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDow/tasks/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDoyMTc0NDY2ODg",
+      "position": "00000000000000000009",
+      "status": "needsAction",
+      "links": []
+    },
+    {
+      "kind": "tasks#task",
+      "id": "MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDoyNjQ2NDg3NzA",
+      "etag": "\"LTExMTE5NTEzMjA\"",
+      "title": "Fichas Lilian",
+      "updated": "2019-07-04T16:02:24.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDow/tasks/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDoyNjQ2NDg3NzA",
+      "position": "00000000000000000011",
+      "status": "needsAction",
+      "links": []
+    },
+    {
+      "kind": "tasks#task",
+      "id": "MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDozMDg0MzM1MDI",
+      "etag": "\"LTExMTE5NTEzMjA\"",
+      "title": "QBS",
+      "updated": "2019-07-04T16:02:24.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDow/tasks/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDozMDg0MzM1MDI",
+      "position": "00000000000000000008",
+      "status": "needsAction",
+      "links": []
+    },
+    {
+      "kind": "tasks#task",
+      "id": "MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDo0ODc3NjE5MzU",
+      "etag": "\"LTExMTE5NTEzMjA\"",
+      "title": "Danilo",
+      "updated": "2019-07-04T16:02:24.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDow/tasks/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDo0ODc3NjE5MzU",
+      "position": "00000000000000000001",
+      "status": "needsAction",
+      "links": []
+    },
+    {
+      "kind": "tasks#task",
+      "id": "MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDo1ODgwOTE3OTU",
+      "etag": "\"LTExMTE5NTEzMjA\"",
+      "title": "",
+      "updated": "2019-07-04T16:02:24.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDow/tasks/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDo1ODgwOTE3OTU",
+      "position": "00000000000000000014",
+      "status": "needsAction",
+      "links": []
+    },
+    {
+      "kind": "tasks#task",
+      "id": "MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDo2MTYwNTY2OTc",
+      "etag": "\"LTExMTE5NTEzMjA\"",
+      "title": "Mauro cex-cem",
+      "updated": "2019-07-04T16:02:24.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDow/tasks/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDo2MTYwNTY2OTc",
+      "position": "00000000000000000004",
+      "status": "needsAction",
+      "links": []
+    },
+    {
+      "kind": "tasks#task",
+      "id": "MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDo2ODMyMjQzMzk",
+      "etag": "\"LTExMTE5NTEzMjA\"",
+      "title": "ISabel (47)9945-6109 ",
+      "updated": "2019-07-04T16:02:24.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDow/tasks/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDo2ODMyMjQzMzk",
+      "position": "00000000000000000000",
+      "status": "needsAction",
+      "links": []
+    },
+    {
+      "kind": "tasks#task",
+      "id": "MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDo3MDQ1MDM2NTg",
+      "etag": "\"LTExMTE5NTEzMjA\"",
+      "title": "Escrever alunos multivar",
+      "updated": "2019-07-04T16:02:24.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDow/tasks/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDo3MDQ1MDM2NTg",
+      "position": "00000000000000000007",
+      "status": "needsAction",
+      "links": []
+    },
+    {
+      "kind": "tasks#task",
+      "id": "MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDo3NjE3NjE0OTQ",
+      "etag": "\"LTExMTE5NTEzMjA\"",
+      "title": "Carga patrimomnial",
+      "updated": "2019-07-04T16:02:24.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDow/tasks/MDM5NjI4MzQ3ODgyNTIwODgxMDM6MDo3NjE3NjE0OTQ",
+      "position": "00000000000000000010",
+      "status": "needsAction",
+      "links": []
+    }
+  ]
+}
+
+--------------------------------------------------------------------------------
+Request : POST https://accounts.google.com/o/oauth2/token
+Headers:
+Content-Type:application/x-www-form-urlencoded
+Body:
+client_id=502080815718-1r1iseasap01bovrrs35rrq9053sfke9.apps.googleusercontent.com&client_secret=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&grant_type=authorization_code&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&code=4%2F1AX4XfWhp9XINtgSqpYIoa2-kKH0rZUFYMckdZeUku2Pdytycp4VgnO9kZsI
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+Pragma: no-cache
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Date: Tue, 26 Apr 2022 00:16:23 GMT
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Content-Type: application/json; charset=utf-8
+Vary: X-Origin
+Vary: Referer
+Server: scaffolding on HTTPServer2
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+  "access_token": "ya29.A0ARrdaM87s6R1HMrr8ge__SG76JJf7I89sBgopb14oiJ4ph5xZK39c-vE6lKx2-RePAinjam9OAcHQP4W7Zq3XyHSpM5A1VergDL39agYpQo_u_d-GlIalQ-Zzpk1_ln9hC0REeaQgsY-2q5yPYvJFKTdpBMO",
+  "expires_in": 3599,
+  "refresh_token": "1//0h2d__bY1rgabCgYIARAAGBESNwF-L9IrpO_X_Kk1aXuCu3s5Nazp5qi1Pwm4x-hT5B-qxRwJQEttqRh31QMsujLSURpDVLlLVrc",
+  "scope": "https://www.googleapis.com/auth/tasks",
+  "token_type": "Bearer"
+}
+--------------------------------------------------------------------------------
+Request : GET https://www.googleapis.com/tasks/v1/users/@me/lists
+Headers:
+Authorization: Bearer ya29.A0ARrdaM87s6R1HMrr8ge__SG76JJf7I89sBgopb14oiJ4ph5xZK39c-vE6lKx2-RePAinjam9OAcHQP4W7Zq3XyHSpM5A1VergDL39agYpQo_u_d-GlIalQ-Zzpk1_ln9hC0REeaQgsY-2q5yPYvJFKTdpBMO
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+ETag: "LTIwMjc5MTg3MDQ"
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Date: Tue, 26 Apr 2022 00:16:24 GMT
+Server: ESF
+Content-Length: 1096
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Connection: close
+Body:
+{
+  "kind": "tasks#taskLists",
+  "etag": "\"LTIwMjc5MTg3MDQ\"",
+  "items": [
+    {
+      "kind": "tasks#taskList",
+      "id": "MTA0MjUwNDgwNTQwMDEwMjY0MTA6MDow",
+      "etag": "\"MTYzNDY0MzU3Mw\"",
+      "title": "My Tasks",
+      "updated": "2022-04-25T15:54:45.590Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/users/@me/lists/MTA0MjUwNDgwNTQwMDEwMjY0MTA6MDow"
+    },
+    {
+      "kind": "tasks#taskList",
+      "id": "MTA0MjUwNDgwNTQwMDEwMjY0MTA6NzU4MjM2NzE2MDYxNDg0Njow",
+      "etag": "\"MTM1MDgzMTM0OA\"",
+      "title": "Lista de Mauricio Camargo",
+      "updated": "2021-10-05T12:53:24.009Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/users/@me/lists/MTA0MjUwNDgwNTQwMDEwMjY0MTA6NzU4MjM2NzE2MDYxNDg0Njow"
+    },
+    {
+      "kind": "tasks#taskList",
+      "id": "MTA0MjUwNDgwNTQwMDEwMjY0MTA6OTczMjg0MTg0NjEwOTI0NDow",
+      "etag": "\"LTE3NTUzMTQxNDM\"",
+      "title": "Lista1",
+      "updated": "2019-06-27T05:19:41.929Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/users/@me/lists/MTA0MjUwNDgwNTQwMDEwMjY0MTA6OTczMjg0MTg0NjEwOTI0NDow"
+    }
+  ]
+}
+
+--------------------------------------------------------------------------------
+Request : GET https://www.googleapis.com/tasks/v1/lists/MTA0MjUwNDgwNTQwMDEwMjY0MTA6MDow/tasks
+Headers:
+Authorization: Bearer ya29.A0ARrdaM87s6R1HMrr8ge__SG76JJf7I89sBgopb14oiJ4ph5xZK39c-vE6lKx2-RePAinjam9OAcHQP4W7Zq3XyHSpM5A1VergDL39agYpQo_u_d-GlIalQ-Zzpk1_ln9hC0REeaQgsY-2q5yPYvJFKTdpBMO
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+ETag: "MTYzNDY0MzU3Mw"
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Date: Tue, 26 Apr 2022 00:16:32 GMT
+Server: ESF
+Content-Length: 1998
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Connection: close
+Body:
+{
+  "kind": "tasks#tasks",
+  "etag": "\"MTYzNDY0MzU3Mw\"",
+  "items": [
+    {
+      "kind": "tasks#task",
+      "id": "TVBWQWxzSjhIQ2RFUU1VYg",
+      "etag": "\"MTY1OTU2OTg0MA\"",
+      "title": "Vai ter golpe! O bostão está  convencendo a população que o STF tem que ser fechado. E os motivos que ele nos dá para isso são hilários. Primeiro, foi o amiguinho deputado que seria preso. Ontem, a ordem que ele deu para os milicos investigarem as urnas. E hoje a promessa que desobedecerá o STF caso o marco temporal seja aprovado. O país vai para o buraco por estes motivos, vocês verão.",
+      "updated": "2022-04-25T22:50:11.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MTA0MjUwNDgwNTQwMDEwMjY0MTA6MDow/tasks/TVBWQWxzSjhIQ2RFUU1VYg",
+      "position": "00000000000000000000",
+      "status": "needsAction",
+      "links": []
+    },
+    {
+      "kind": "tasks#task",
+      "id": "eXFiWFIwZWh3Z3MweGdnQw",
+      "etag": "\"MzIxODc4NjIz\"",
+      "title": "2015 março",
+      "updated": "2021-08-04T22:01:24.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MTA0MjUwNDgwNTQwMDEwMjY0MTA6MDow/tasks/eXFiWFIwZWh3Z3MweGdnQw",
+      "position": "00000000000000000001",
+      "notes": "Venda da casa\nBullying da Luana\nLuana internada\nTentativas de suicídio\n\n2016\nCasa ainda\nMoradias do Cassino\nDecepções profissionais com alunos e laboratório\nDerivação profissional para estatística",
+      "status": "needsAction",
+      "links": []
+    },
+    {
+      "kind": "tasks#task",
+      "id": "WXY5NXVpWE5HTTl0M0E4dA",
+      "etag": "\"LTIxMjI2ODQ5MTc\"",
+      "title": "Avaliação de cursos",
+      "updated": "2021-07-07T14:58:40.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MTA0MjUwNDgwNTQwMDEwMjY0MTA6MDow/tasks/WXY5NXVpWE5HTTl0M0E4dA",
+      "position": "00000000000000000002",
+      "notes": "Ver e-mail",
+      "status": "completed",
+      "completed": "2021-07-07T14:58:38.000Z",
+      "links": []
+    }
+  ]
+}
+
+--------------------------------------------------------------------------------
+Request : GET https://www.googleapis.com/tasks/v1/lists/MTA0MjUwNDgwNTQwMDEwMjY0MTA6NzU4MjM2NzE2MDYxNDg0Njow/tasks
+Headers:
+Authorization: Bearer ya29.A0ARrdaM87s6R1HMrr8ge__SG76JJf7I89sBgopb14oiJ4ph5xZK39c-vE6lKx2-RePAinjam9OAcHQP4W7Zq3XyHSpM5A1VergDL39agYpQo_u_d-GlIalQ-Zzpk1_ln9hC0REeaQgsY-2q5yPYvJFKTdpBMO
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+ETag: "MTM1MDgzMTM0OA"
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Date: Tue, 26 Apr 2022 00:16:44 GMT
+Server: ESF
+Content-Length: 724
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Connection: close
+Body:
+{
+  "kind": "tasks#tasks",
+  "etag": "\"MTM1MDgzMTM0OA\"",
+  "items": [
+    {
+      "kind": "tasks#task",
+      "id": "MXRoNnlYVjRlWkRoa2taYQ",
+      "etag": "\"LTEzNDc0MzI4ODU\"",
+      "title": "5 Livros Para Aprender Estatística Para Data Science - Data Science Academy",
+      "updated": "2021-07-16T14:19:32.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MTA0MjUwNDgwNTQwMDEwMjY0MTA6NzU4MjM2NzE2MDYxNDg0Njow/tasks/MXRoNnlYVjRlWkRoa2taYQ",
+      "position": "00000000000000000000",
+      "notes": "http://datascienceacademy.com.br/blog/5-livros-para-aprender-estatistica-para-data-science/",
+      "status": "completed",
+      "completed": "2021-07-16T14:19:17.000Z",
+      "links": []
+    }
+  ]
+}
+
+--------------------------------------------------------------------------------
+Request : GET https://www.googleapis.com/tasks/v1/lists/MTA0MjUwNDgwNTQwMDEwMjY0MTA6OTczMjg0MTg0NjEwOTI0NDow/tasks
+Headers:
+Authorization: Bearer ya29.A0ARrdaM87s6R1HMrr8ge__SG76JJf7I89sBgopb14oiJ4ph5xZK39c-vE6lKx2-RePAinjam9OAcHQP4W7Zq3XyHSpM5A1VergDL39agYpQo_u_d-GlIalQ-Zzpk1_ln9hC0REeaQgsY-2q5yPYvJFKTdpBMO
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+ETag: "LTE3NTUzMTQxNDM"
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Date: Tue, 26 Apr 2022 00:16:49 GMT
+Server: ESF
+Content-Length: 1130
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Connection: close
+Body:
+{
+  "kind": "tasks#tasks",
+  "etag": "\"LTE3NTUzMTQxNDM\"",
+  "items": [
+    {
+      "kind": "tasks#task",
+      "id": "MTA0MjUwNDgwNTQwMDEwMjY0MTA6OTczMjg0MTg0NjEwOTI0NDoyNDE0NTA1NjIyNzMxODUz",
+      "etag": "\"LTE3NTUzMTQxNzQ\"",
+      "title": "Outra tarefa",
+      "updated": "2019-06-27T05:19:41.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MTA0MjUwNDgwNTQwMDEwMjY0MTA6OTczMjg0MTg0NjEwOTI0NDow/tasks/MTA0MjUwNDgwNTQwMDEwMjY0MTA6OTczMjg0MTg0NjEwOTI0NDoyNDE0NTA1NjIyNzMxODUz",
+      "position": "00000000000000000001",
+      "status": "needsAction",
+      "links": []
+    },
+    {
+      "kind": "tasks#task",
+      "id": "MTA0MjUwNDgwNTQwMDEwMjY0MTA6OTczMjg0MTg0NjEwOTI0NDo3NzMyOTM5NjQ0MjM3MDYy",
+      "etag": "\"LTE3NTUzMTQxNzQ\"",
+      "title": "Mais uma",
+      "updated": "2019-06-27T05:19:41.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MTA0MjUwNDgwNTQwMDEwMjY0MTA6OTczMjg0MTg0NjEwOTI0NDow/tasks/MTA0MjUwNDgwNTQwMDEwMjY0MTA6OTczMjg0MTg0NjEwOTI0NDo3NzMyOTM5NjQ0MjM3MDYy",
+      "position": "00000000000000000000",
+      "status": "needsAction",
+      "links": []
+    }
+  ]
+}
+
+--------------------------------------------------------------------------------
+Request : GET https://www.googleapis.com/tasks/v1/lists/MTA0MjUwNDgwNTQwMDEwMjY0MTA6MDow/tasks
+Headers:
+Authorization: Bearer ya29.A0ARrdaM87s6R1HMrr8ge__SG76JJf7I89sBgopb14oiJ4ph5xZK39c-vE6lKx2-RePAinjam9OAcHQP4W7Zq3XyHSpM5A1VergDL39agYpQo_u_d-GlIalQ-Zzpk1_ln9hC0REeaQgsY-2q5yPYvJFKTdpBMO
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+ETag: "MTYzNDY0MzU3Mw"
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Date: Tue, 26 Apr 2022 00:16:57 GMT
+Server: ESF
+Content-Length: 1998
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Connection: close
+Body:
+{
+  "kind": "tasks#tasks",
+  "etag": "\"MTYzNDY0MzU3Mw\"",
+  "items": [
+    {
+      "kind": "tasks#task",
+      "id": "TVBWQWxzSjhIQ2RFUU1VYg",
+      "etag": "\"MTY1OTU2OTg0MA\"",
+      "title": "Vai ter golpe! O bostão está  convencendo a população que o STF tem que ser fechado. E os motivos que ele nos dá para isso são hilários. Primeiro, foi o amiguinho deputado que seria preso. Ontem, a ordem que ele deu para os milicos investigarem as urnas. E hoje a promessa que desobedecerá o STF caso o marco temporal seja aprovado. O país vai para o buraco por estes motivos, vocês verão.",
+      "updated": "2022-04-25T22:50:11.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MTA0MjUwNDgwNTQwMDEwMjY0MTA6MDow/tasks/TVBWQWxzSjhIQ2RFUU1VYg",
+      "position": "00000000000000000000",
+      "status": "needsAction",
+      "links": []
+    },
+    {
+      "kind": "tasks#task",
+      "id": "eXFiWFIwZWh3Z3MweGdnQw",
+      "etag": "\"MzIxODc4NjIz\"",
+      "title": "2015 março",
+      "updated": "2021-08-04T22:01:24.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MTA0MjUwNDgwNTQwMDEwMjY0MTA6MDow/tasks/eXFiWFIwZWh3Z3MweGdnQw",
+      "position": "00000000000000000001",
+      "notes": "Venda da casa\nBullying da Luana\nLuana internada\nTentativas de suicídio\n\n2016\nCasa ainda\nMoradias do Cassino\nDecepções profissionais com alunos e laboratório\nDerivação profissional para estatística",
+      "status": "needsAction",
+      "links": []
+    },
+    {
+      "kind": "tasks#task",
+      "id": "WXY5NXVpWE5HTTl0M0E4dA",
+      "etag": "\"LTIxMjI2ODQ5MTc\"",
+      "title": "Avaliação de cursos",
+      "updated": "2021-07-07T14:58:40.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MTA0MjUwNDgwNTQwMDEwMjY0MTA6MDow/tasks/WXY5NXVpWE5HTTl0M0E4dA",
+      "position": "00000000000000000002",
+      "notes": "Ver e-mail",
+      "status": "completed",
+      "completed": "2021-07-07T14:58:38.000Z",
+      "links": []
+    }
+  ]
+}
+
+--------------------------------------------------------------------------------
+Request : POST https://accounts.google.com/o/oauth2/token
+Headers:
+Content-Type:application/x-www-form-urlencoded
+Body:
+client_id=502080815718-1r1iseasap01bovrrs35rrq9053sfke9.apps.googleusercontent.com&client_secret=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&refresh_token=1%2F%2F0h2d__bY1rgabCgYIARAAGBESNwF-L9IrpO_X_Kk1aXuCu3s5Nazp5qi1Pwm4x-hT5B-qxRwJQEttqRh31QMsujLSURpDVLlLVrc&grant_type=refresh_token
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+Date: Tue, 26 Apr 2022 00:20:29 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Content-Type: application/json; charset=utf-8
+Vary: X-Origin
+Vary: Referer
+Server: scaffolding on HTTPServer2
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+  "access_token": "ya29.A0ARrdaM9bK1LNXmQjkOjoodketdkpNE03lRQBFRTeQEtyzbGeeaS1p6-3bq3m5pNMQUKAmR-cELIuB5yUoBwkj8mVgDwfYdBn8BgfgiRuCpGcQT8hcyoHQJqubOnoB22glCM3CllOpDctbaLkS55eDJdhs7_k",
+  "expires_in": 3599,
+  "scope": "https://www.googleapis.com/auth/tasks",
+  "token_type": "Bearer"
+}
+--------------------------------------------------------------------------------
+Request : GET https://www.googleapis.com/tasks/v1/users/@me/lists
+Headers:
+Authorization: Bearer ya29.A0ARrdaM9bK1LNXmQjkOjoodketdkpNE03lRQBFRTeQEtyzbGeeaS1p6-3bq3m5pNMQUKAmR-cELIuB5yUoBwkj8mVgDwfYdBn8BgfgiRuCpGcQT8hcyoHQJqubOnoB22glCM3CllOpDctbaLkS55eDJdhs7_k
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+ETag: "LTIwMjc5MTg3MDQ"
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Date: Tue, 26 Apr 2022 00:20:30 GMT
+Server: ESF
+Content-Length: 1096
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Connection: close
+Body:
+{
+  "kind": "tasks#taskLists",
+  "etag": "\"LTIwMjc5MTg3MDQ\"",
+  "items": [
+    {
+      "kind": "tasks#taskList",
+      "id": "MTA0MjUwNDgwNTQwMDEwMjY0MTA6MDow",
+      "etag": "\"MTYzNDY0MzU3Mw\"",
+      "title": "My Tasks",
+      "updated": "2022-04-25T15:54:45.590Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/users/@me/lists/MTA0MjUwNDgwNTQwMDEwMjY0MTA6MDow"
+    },
+    {
+      "kind": "tasks#taskList",
+      "id": "MTA0MjUwNDgwNTQwMDEwMjY0MTA6NzU4MjM2NzE2MDYxNDg0Njow",
+      "etag": "\"MTM1MDgzMTM0OA\"",
+      "title": "Lista de Mauricio Camargo",
+      "updated": "2021-10-05T12:53:24.009Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/users/@me/lists/MTA0MjUwNDgwNTQwMDEwMjY0MTA6NzU4MjM2NzE2MDYxNDg0Njow"
+    },
+    {
+      "kind": "tasks#taskList",
+      "id": "MTA0MjUwNDgwNTQwMDEwMjY0MTA6OTczMjg0MTg0NjEwOTI0NDow",
+      "etag": "\"LTE3NTUzMTQxNDM\"",
+      "title": "Lista1",
+      "updated": "2019-06-27T05:19:41.929Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/users/@me/lists/MTA0MjUwNDgwNTQwMDEwMjY0MTA6OTczMjg0MTg0NjEwOTI0NDow"
+    }
+  ]
+}
+
+--------------------------------------------------------------------------------
+Request : GET https://www.googleapis.com/tasks/v1/lists/MTA0MjUwNDgwNTQwMDEwMjY0MTA6MDow/tasks
+Headers:
+Authorization: Bearer ya29.A0ARrdaM9bK1LNXmQjkOjoodketdkpNE03lRQBFRTeQEtyzbGeeaS1p6-3bq3m5pNMQUKAmR-cELIuB5yUoBwkj8mVgDwfYdBn8BgfgiRuCpGcQT8hcyoHQJqubOnoB22glCM3CllOpDctbaLkS55eDJdhs7_k
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+ETag: "MTYzNDY0MzU3Mw"
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Date: Tue, 26 Apr 2022 00:20:37 GMT
+Server: ESF
+Content-Length: 1998
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Connection: close
+Body:
+{
+  "kind": "tasks#tasks",
+  "etag": "\"MTYzNDY0MzU3Mw\"",
+  "items": [
+    {
+      "kind": "tasks#task",
+      "id": "TVBWQWxzSjhIQ2RFUU1VYg",
+      "etag": "\"MTY1OTU2OTg0MA\"",
+      "title": "Vai ter golpe! O bostão está  convencendo a população que o STF tem que ser fechado. E os motivos que ele nos dá para isso são hilários. Primeiro, foi o amiguinho deputado que seria preso. Ontem, a ordem que ele deu para os milicos investigarem as urnas. E hoje a promessa que desobedecerá o STF caso o marco temporal seja aprovado. O país vai para o buraco por estes motivos, vocês verão.",
+      "updated": "2022-04-25T22:50:11.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MTA0MjUwNDgwNTQwMDEwMjY0MTA6MDow/tasks/TVBWQWxzSjhIQ2RFUU1VYg",
+      "position": "00000000000000000000",
+      "status": "needsAction",
+      "links": []
+    },
+    {
+      "kind": "tasks#task",
+      "id": "eXFiWFIwZWh3Z3MweGdnQw",
+      "etag": "\"MzIxODc4NjIz\"",
+      "title": "2015 março",
+      "updated": "2021-08-04T22:01:24.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MTA0MjUwNDgwNTQwMDEwMjY0MTA6MDow/tasks/eXFiWFIwZWh3Z3MweGdnQw",
+      "position": "00000000000000000001",
+      "notes": "Venda da casa\nBullying da Luana\nLuana internada\nTentativas de suicídio\n\n2016\nCasa ainda\nMoradias do Cassino\nDecepções profissionais com alunos e laboratório\nDerivação profissional para estatística",
+      "status": "needsAction",
+      "links": []
+    },
+    {
+      "kind": "tasks#task",
+      "id": "WXY5NXVpWE5HTTl0M0E4dA",
+      "etag": "\"LTIxMjI2ODQ5MTc\"",
+      "title": "Avaliação de cursos",
+      "updated": "2021-07-07T14:58:40.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MTA0MjUwNDgwNTQwMDEwMjY0MTA6MDow/tasks/WXY5NXVpWE5HTTl0M0E4dA",
+      "position": "00000000000000000002",
+      "notes": "Ver e-mail",
+      "status": "completed",
+      "completed": "2021-07-07T14:58:38.000Z",
+      "links": []
+    }
+  ]
+}
+
+--------------------------------------------------------------------------------
+Request : POST https://accounts.google.com/o/oauth2/token
+Headers:
+Content-Type:application/x-www-form-urlencoded
+Body:
+client_id=502080815718-1r1iseasap01bovrrs35rrq9053sfke9.apps.googleusercontent.com&client_secret=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&refresh_token=1%2F%2F0h2d__bY1rgabCgYIARAAGBESNwF-L9IrpO_X_Kk1aXuCu3s5Nazp5qi1Pwm4x-hT5B-qxRwJQEttqRh31QMsujLSURpDVLlLVrc&grant_type=refresh_token
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+Date: Tue, 26 Apr 2022 00:21:46 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Content-Type: application/json; charset=utf-8
+Vary: X-Origin
+Vary: Referer
+Server: scaffolding on HTTPServer2
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+  "access_token": "ya29.A0ARrdaM8E2hAubTlud0nGW7ltFiVco9nUjfwI7ZAnaVG4TnpOoz2OZ1iy3bMZe0VMwhfIai-6si4m0b27BG50x9Ck23OBwrcN7wTMgUzEZ8q03wLe9FqjKMTdSO_xM-IMhBY3TT-J5XGVneJbEkQEXMVjBeEy",
+  "expires_in": 3599,
+  "scope": "https://www.googleapis.com/auth/tasks",
+  "token_type": "Bearer"
+}
+--------------------------------------------------------------------------------
+Request : GET https://www.googleapis.com/tasks/v1/users/@me/lists
+Headers:
+Authorization: Bearer ya29.A0ARrdaM8E2hAubTlud0nGW7ltFiVco9nUjfwI7ZAnaVG4TnpOoz2OZ1iy3bMZe0VMwhfIai-6si4m0b27BG50x9Ck23OBwrcN7wTMgUzEZ8q03wLe9FqjKMTdSO_xM-IMhBY3TT-J5XGVneJbEkQEXMVjBeEy
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+ETag: "LTIwMjc5MTg3MDQ"
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Date: Tue, 26 Apr 2022 00:21:47 GMT
+Server: ESF
+Content-Length: 1096
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Connection: close
+Body:
+{
+  "kind": "tasks#taskLists",
+  "etag": "\"LTIwMjc5MTg3MDQ\"",
+  "items": [
+    {
+      "kind": "tasks#taskList",
+      "id": "MTA0MjUwNDgwNTQwMDEwMjY0MTA6MDow",
+      "etag": "\"MTYzNDY0MzU3Mw\"",
+      "title": "My Tasks",
+      "updated": "2022-04-25T15:54:45.590Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/users/@me/lists/MTA0MjUwNDgwNTQwMDEwMjY0MTA6MDow"
+    },
+    {
+      "kind": "tasks#taskList",
+      "id": "MTA0MjUwNDgwNTQwMDEwMjY0MTA6NzU4MjM2NzE2MDYxNDg0Njow",
+      "etag": "\"MTM1MDgzMTM0OA\"",
+      "title": "Lista de Mauricio Camargo",
+      "updated": "2021-10-05T12:53:24.009Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/users/@me/lists/MTA0MjUwNDgwNTQwMDEwMjY0MTA6NzU4MjM2NzE2MDYxNDg0Njow"
+    },
+    {
+      "kind": "tasks#taskList",
+      "id": "MTA0MjUwNDgwNTQwMDEwMjY0MTA6OTczMjg0MTg0NjEwOTI0NDow",
+      "etag": "\"LTE3NTUzMTQxNDM\"",
+      "title": "Lista1",
+      "updated": "2019-06-27T05:19:41.929Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/users/@me/lists/MTA0MjUwNDgwNTQwMDEwMjY0MTA6OTczMjg0MTg0NjEwOTI0NDow"
+    }
+  ]
+}
+
+--------------------------------------------------------------------------------
+Request : GET https://www.googleapis.com/tasks/v1/lists/MTA0MjUwNDgwNTQwMDEwMjY0MTA6MDow/tasks
+Headers:
+Authorization: Bearer ya29.A0ARrdaM8E2hAubTlud0nGW7ltFiVco9nUjfwI7ZAnaVG4TnpOoz2OZ1iy3bMZe0VMwhfIai-6si4m0b27BG50x9Ck23OBwrcN7wTMgUzEZ8q03wLe9FqjKMTdSO_xM-IMhBY3TT-J5XGVneJbEkQEXMVjBeEy
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+ETag: "MTYzNDY0MzU3Mw"
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Date: Tue, 26 Apr 2022 00:21:51 GMT
+Server: ESF
+Content-Length: 1998
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Connection: close
+Body:
+{
+  "kind": "tasks#tasks",
+  "etag": "\"MTYzNDY0MzU3Mw\"",
+  "items": [
+    {
+      "kind": "tasks#task",
+      "id": "TVBWQWxzSjhIQ2RFUU1VYg",
+      "etag": "\"MTY1OTU2OTg0MA\"",
+      "title": "Vai ter golpe! O bostão está  convencendo a população que o STF tem que ser fechado. E os motivos que ele nos dá para isso são hilários. Primeiro, foi o amiguinho deputado que seria preso. Ontem, a ordem que ele deu para os milicos investigarem as urnas. E hoje a promessa que desobedecerá o STF caso o marco temporal seja aprovado. O país vai para o buraco por estes motivos, vocês verão.",
+      "updated": "2022-04-25T22:50:11.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MTA0MjUwNDgwNTQwMDEwMjY0MTA6MDow/tasks/TVBWQWxzSjhIQ2RFUU1VYg",
+      "position": "00000000000000000000",
+      "status": "needsAction",
+      "links": []
+    },
+    {
+      "kind": "tasks#task",
+      "id": "eXFiWFIwZWh3Z3MweGdnQw",
+      "etag": "\"MzIxODc4NjIz\"",
+      "title": "2015 março",
+      "updated": "2021-08-04T22:01:24.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MTA0MjUwNDgwNTQwMDEwMjY0MTA6MDow/tasks/eXFiWFIwZWh3Z3MweGdnQw",
+      "position": "00000000000000000001",
+      "notes": "Venda da casa\nBullying da Luana\nLuana internada\nTentativas de suicídio\n\n2016\nCasa ainda\nMoradias do Cassino\nDecepções profissionais com alunos e laboratório\nDerivação profissional para estatística",
+      "status": "needsAction",
+      "links": []
+    },
+    {
+      "kind": "tasks#task",
+      "id": "WXY5NXVpWE5HTTl0M0E4dA",
+      "etag": "\"LTIxMjI2ODQ5MTc\"",
+      "title": "Avaliação de cursos",
+      "updated": "2021-07-07T14:58:40.000Z",
+      "selfLink": "https://www.googleapis.com/tasks/v1/lists/MTA0MjUwNDgwNTQwMDEwMjY0MTA6MDow/tasks/WXY5NXVpWE5HTTl0M0E4dA",
+      "position": "00000000000000000002",
+      "notes": "Ver e-mail",
+      "status": "completed",
+      "completed": "2021-07-07T14:58:38.000Z",
+      "links": []
+    }
+  ]
+}
+
+--------------------------------------------------------------------------------
+Request : POST https://accounts.google.com/o/oauth2/token
+Headers:
+Content-Type:application/x-www-form-urlencoded
+Body:
+client_id=502080815718-1r1iseasap01bovrrs35rrq9053sfke9.apps.googleusercontent.com&client_secret=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&refresh_token=1%2F%2F0h2d__bY1rgabCgYIARAAGBESNwF-L9IrpO_X_Kk1aXuCu3s5Nazp5qi1Pwm4x-hT5B-qxRwJQEttqRh31QMsujLSURpDVLlLVrc&grant_type=refresh_token
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 400 : Bad Request
+Headers:
+Date: Sat, 30 Apr 2022 12:48:06 GMT
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Pragma: no-cache
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Type: application/json; charset=utf-8
+Vary: X-Origin
+Vary: Referer
+Server: scaffolding on HTTPServer2
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+  "error": "invalid_grant",
+  "error_description": "Bad Request"
+}
+--------------------------------------------------------------------------------
+Request : POST https://accounts.google.com/o/oauth2/token
+Headers:
+Content-Type:application/x-www-form-urlencoded
+Body:
+client_id=502080815718-1r1iseasap01bovrrs35rrq9053sfke9.apps.googleusercontent.com&client_secret=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&refresh_token=1%2F%2F0h2d__bY1rgabCgYIARAAGBESNwF-L9IrpO_X_Kk1aXuCu3s5Nazp5qi1Pwm4x-hT5B-qxRwJQEttqRh31QMsujLSURpDVLlLVrc&grant_type=refresh_token
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 400 : Bad Request
+Headers:
+Date: Sat, 30 Apr 2022 12:48:49 GMT
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Type: application/json; charset=utf-8
+Vary: X-Origin
+Vary: Referer
+Server: scaffolding on HTTPServer2
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+  "error": "invalid_grant",
+  "error_description": "Bad Request"
+}

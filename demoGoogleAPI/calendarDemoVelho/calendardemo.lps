@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units Count="3">
+      <Unit0>
+        <Filename Value="calendardemo.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="28"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="frmmain.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MainForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="140"/>
+        <CursorPos X="44" Y="152"/>
+        <UsageCount Value="28"/>
+        <Bookmarks Count="3">
+          <Item0 X="7" Y="310" ID="2"/>
+          <Item1 Y="293"/>
+          <Item2 X="15" Y="230" ID="1"/>
+        </Bookmarks>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="fphttpclient.pp"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="28"/>
+      </Unit2>
+    </Units>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode="default"/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

@@ -1,0 +1,164 @@
+object MainForm: TMainForm
+  Left = 506
+  Height = 557
+  Top = 173
+  Width = 1063
+  Caption = 'Google drive demo'
+  ClientHeight = 557
+  ClientWidth = 1063
+  DesignTimePPI = 135
+  OnCreate = FormCreate
+  LCLVersion = '2.2.0.4'
+  object BRefreshFolders: TButton
+    Left = 101
+    Height = 35
+    Top = 11
+    Width = 90
+    Caption = 'Refresh'
+    OnClick = BRefreshFoldersClick
+    TabOrder = 0
+  end
+  object GBAccess: TGroupBox
+    Left = 0
+    Height = 103
+    Top = 454
+    Width = 1063
+    Align = alBottom
+    Caption = 'Please provide Google API access code'
+    ClientHeight = 78
+    ClientWidth = 1061
+    TabOrder = 1
+    Visible = False
+    object LEAccess: TLabel
+      Left = 22
+      Height = 24
+      Top = 11
+      Width = 113
+      Caption = 'Access code'
+    end
+    object BSetAccess: TButton
+      Left = 822
+      Height = 35
+      Top = 1
+      Width = 105
+      Anchors = [akTop, akRight]
+      Caption = 'OK'
+      OnClick = BSetAccessClick
+      TabOrder = 0
+    end
+    object BCancel: TButton
+      Left = 935
+      Height = 35
+      Top = 0
+      Width = 105
+      Anchors = [akTop, akRight]
+      Caption = 'Cancel'
+      OnClick = BCancelClick
+      TabOrder = 1
+    end
+    object EAccessCode: TEdit
+      Left = 158
+      Height = 41
+      Top = 11
+      Width = 562
+      TabOrder = 2
+    end
+  end
+  object BRefreshFiles: TButton
+    Left = 863
+    Height = 35
+    Top = 11
+    Width = 158
+    Anchors = [akTop, akRight]
+    Caption = 'Refresh'
+    Enabled = False
+    OnClick = BRefreshFilesClick
+    TabOrder = 2
+  end
+  object LTasks: TLabel
+    Left = 551
+    Height = 24
+    Top = 22
+    Width = 302
+    Anchors = [akTop, akLeft, akRight]
+    Caption = 'Files in folder'
+  end
+  object Label1: TLabel
+    Left = 31
+    Height = 24
+    Top = 22
+    Width = 70
+    Caption = 'Folders'
+  end
+  object TVFolders: TTreeView
+    Left = 22
+    Height = 383
+    Top = 49
+    Width = 484
+    Anchors = [akTop, akLeft, akBottom]
+    ReadOnly = True
+    TabOrder = 3
+    OnSelectionChanged = TVFoldersSelectionChanged
+    Options = [tvoAutoItemHeight, tvoHideSelection, tvoKeepCollapsedNodes, tvoReadOnly, tvoShowButtons, tvoShowLines, tvoShowRoot, tvoToolTips, tvoThemedDraw]
+  end
+  object LVFiles: TListView
+    Left = 540
+    Height = 383
+    Top = 49
+    Width = 506
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Columns = <    
+      item
+        Caption = 'Title'
+        Width = 70
+      end    
+      item
+        Caption = 'Date Created'
+        Width = 141
+      end    
+      item
+        Caption = 'Description'
+        Width = 281
+      end    
+      item
+        Caption = 'Editable'
+        Width = 70
+      end    
+      item
+        Caption = 'Size'
+        Width = 70
+      end    
+      item
+        Caption = 'Last modified by'
+        Width = 70
+      end    
+      item
+        Caption = 'DownloadURL'
+        Width = 422
+      end    
+      item
+        Caption = 'Version'
+        Width = 70
+      end    
+      item
+        Caption = 'Mime Type'
+        Width = 281
+      end>
+    TabOrder = 4
+    ViewStyle = vsReport
+    OnDblClick = LVFilesDblClick
+  end
+  object Button1: TButton
+    Left = 355
+    Height = 35
+    Top = 1
+    Width = 105
+    Caption = 'Button1'
+    OnClick = Button1Click
+    TabOrder = 5
+  end
+  object SDDownload: TSaveDialog
+    Left = 584
+    Top = 229
+  end
+end

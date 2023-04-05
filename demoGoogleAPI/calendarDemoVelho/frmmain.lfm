@@ -1,0 +1,129 @@
+object MainForm: TMainForm
+  Left = 456
+  Height = 582
+  Top = 191
+  Width = 999
+  Caption = 'Calendar Demo'
+  ClientHeight = 582
+  ClientWidth = 999
+  DesignTimePPI = 144
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  LCLVersion = '2.2.0.4'
+  object BFetchCalendars: TButton
+    Left = 12
+    Height = 38
+    Top = 12
+    Width = 192
+    Caption = 'Fetch calendars'
+    OnClick = BFetchCalendarsClick
+    TabOrder = 0
+  end
+  object GBAccess: TGroupBox
+    Left = 0
+    Height = 119
+    Top = 463
+    Width = 999
+    Align = alBottom
+    Caption = 'Please provide Google API access code'
+    ClientHeight = 89
+    ClientWidth = 995
+    TabOrder = 1
+    Visible = False
+    object LEAccess: TLabel
+      Left = 23
+      Height = 25
+      Top = 12
+      Width = 97
+      Caption = 'Access code'
+    end
+    object BSetAccess: TButton
+      Left = 737
+      Height = 38
+      Top = 14
+      Width = 112
+      Anchors = [akTop, akRight]
+      Caption = 'OK'
+      OnClick = BSetAccessClick
+      TabOrder = 0
+    end
+    object BCancel: TButton
+      Left = 857
+      Height = 38
+      Top = 12
+      Width = 112
+      Anchors = [akTop, akRight]
+      Caption = 'Cancel'
+      OnClick = BCancelClick
+      TabOrder = 1
+    end
+    object EAccessCode: TEdit
+      Left = 169
+      Height = 33
+      Top = 12
+      Width = 544
+      Anchors = [akTop, akLeft, akRight]
+      TabOrder = 2
+    end
+  end
+  object BFetchEvents: TButton
+    Left = 822
+    Height = 38
+    Top = 12
+    Width = 144
+    Anchors = [akTop, akRight]
+    Caption = 'Fetch Events'
+    Enabled = False
+    OnClick = BFetchEventsClick
+    TabOrder = 2
+  end
+  object LBCalendars: TListBox
+    Left = 12
+    Height = 372
+    Top = 60
+    Width = 468
+    Anchors = [akTop, akLeft, akBottom]
+    ItemHeight = 0
+    OnSelectionChange = LBCalendarsSelectionChange
+    ScrollWidth = 308
+    TabOrder = 3
+  end
+  object LBEvents: TListBox
+    Left = 492
+    Height = 374
+    Top = 60
+    Width = 486
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    ItemHeight = 0
+    ScrollWidth = 320
+    TabOrder = 4
+  end
+  object LEvents: TLabel
+    Left = 489
+    Height = 32
+    Top = 16
+    Width = 309
+    Anchors = [akTop, akLeft, akRight]
+    AutoSize = False
+    Caption = 'Events for calendar : <select a calendar>'
+  end
+  object Button1: TButton
+    Left = 263
+    Height = 38
+    Top = 10
+    Width = 113
+    Caption = 'Button1'
+    OnClick = Button1Click
+    TabOrder = 5
+  end
+  object Memo1: TMemo
+    Left = 171
+    Height = 135
+    Top = 546
+    Width = 486
+    Lines.Strings = (
+      'Memo1'
+    )
+    TabOrder = 6
+  end
+end

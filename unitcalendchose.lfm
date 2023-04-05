@@ -1,0 +1,95 @@
+object FormCalendChose: TFormCalendChose
+  Left = 608
+  Height = 428
+  Top = 318
+  Width = 776
+  ClientHeight = 428
+  ClientWidth = 776
+  DesignTimePPI = 135
+  Position = poScreenCenter
+  LCLVersion = '2.0.12.0'
+  object BitBtn1: TBitBtn
+    Left = 248
+    Height = 72
+    Top = 345
+    Width = 106
+    Default = True
+    DefaultCaption = True
+    Kind = bkOK
+    Layout = blGlyphTop
+    ModalResult = 1
+    ParentFont = False
+    TabOrder = 0
+  end
+  object BitBtn2: TBitBtn
+    Left = 405
+    Height = 72
+    Top = 345
+    Width = 106
+    Cancel = True
+    DefaultCaption = True
+    Kind = bkCancel
+    Layout = blGlyphTop
+    ModalResult = 2
+    ParentFont = False
+    TabOrder = 1
+  end
+  object DBGrid2: TDBGrid
+    Left = 0
+    Height = 330
+    Top = 0
+    Width = 776
+    Align = alTop
+    Color = clWindow
+    Columns = <    
+      item
+        MinSize = 9
+        MaxSize = 188
+        Title.Caption = 'Title'
+        Visible = False
+        FieldName = 'ID_Agenda'
+      end    
+      item
+        MinSize = 9
+        MaxSize = 188
+        Title.Caption = 'Hora'
+        FieldName = 'Data'
+        DisplayFormat = 'hh:mm'
+      end    
+      item
+        MinSize = 9
+        MaxSize = 188
+        Title.Caption = 'Evento'
+        Width = 562
+        FieldName = 'Evento'
+      end>
+    DataSource = DSAgChose
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -19
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Options = [dgTitles, dgIndicator, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+    ParentFont = False
+    Scrollbars = ssAutoBoth
+    TabOrder = 2
+    OnDblClick = DBGrid2DblClick
+  end
+  object DSAgChose: TDataSource
+    DataSet = QAgChose
+    Left = 293
+    Top = 173
+  end
+  object QAgChose: TSQLQuery
+    PacketRecords = -1
+    FieldDefs = <>
+    Database = Form1.Conn
+    Transaction = Form1.Trans
+    Options = [sqoKeepOpenOnCommit, sqoAutoApplyUpdates, sqoAutoCommit, sqoRefreshUsingSelect]
+    Params = <>
+    UpdateMode = upWhereAll
+    Left = 398
+    Top = 173
+  end
+end

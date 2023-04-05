@@ -1,0 +1,700 @@
+--------------------------------------------------------------------------------
+Request : POST https://accounts.google.com/o/oauth2/token
+Headers:
+Content-Type:application/x-www-form-urlencoded
+Body:
+client_id=502080815718-1r1iseasap01bovrrs35rrq9053sfke9.apps.googleusercontent.com&client_secret=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&refresh_token=1%2F%2F0hyRR8V5YTQpiCgYIARAAGBESNwF-L9IrLSgBfBBUUlQM5gJZKCLusH9lj20syeit9a_scu8FdyITnCGReJpKUCqZpkPQXq6Jpo0&grant_type=refresh_token
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Thu, 12 May 2022 19:46:57 GMT
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Vary: X-Origin
+Vary: Referer
+Server: scaffolding on HTTPServer2
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+  "access_token": "ya29.a0ARrdaM8w7rpkRzQ5LTFZ1tYnkeEXxHtBcj7f6GDBuh8vnjlWcUeONectJdPtu475IjDYp0atLG7Wan7F2XnWxCwbyy4cK3sy_FdZBdL-A6KM73qKKp2-L5OWUebyJ3b_qocEeVl7c4ZQT_0TLx91kEDO0AOOeA",
+  "expires_in": 3599,
+  "scope": "https://www.googleapis.com/auth/drive",
+  "token_type": "Bearer"
+}
+--------------------------------------------------------------------------------
+Request : GET https://www.googleapis.com/drive/v3/files?pageSize=3&q=mimeType+%3D+'application%2Fvnd.google-apps.folder'+and+'root'+in+parents
+Headers:
+Authorization: Bearer ya29.a0ARrdaM8w7rpkRzQ5LTFZ1tYnkeEXxHtBcj7f6GDBuh8vnjlWcUeONectJdPtu475IjDYp0atLG7Wan7F2XnWxCwbyy4cK3sy_FdZBdL-A6KM73qKKp2-L5OWUebyJ3b_qocEeVl7c4ZQT_0TLx91kEDO0AOOeA
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Thu, 12 May 2022 19:46:58 GMT
+Vary: X-Origin
+Content-Type: application/json; charset=UTF-8
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self'
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+ "kind": "drive#fileList",
+ "nextPageToken": "~!!~AI9FV7TOuVaAjPgyiNY3ewQBwnIQ8oq0rhrK_eyMS_rf_-67GF5ZMDbTE2MRp_jBSysbw1KuMPDd6iTSPsJxtOKjz8WkxLycOZ_zm8mJJVO_Asy-_BolxKaQPT43eAqFKnL67F1l7bsG8tZhTSqzDnBKrke7TSeL2m6M-d7GfwsR_lAzKInpQv4DssSeAPTRZ7zMr_ep3Z6Nl78uR1CCssVLh5a2X4uVTUcLliJJVVobHzUUUJ-nayaz3ba88P42eEd5tDQddYS3DavAzEwyu_EOs_T7DK50YYauudVx7rHWhH1eSocmS44=",
+ "incompleteSearch": false,
+ "files": [
+  {
+   "kind": "drive#file",
+   "id": "1WVxaUQeFOvX6NMmvfud78z73qjudf_mH",
+   "name": "Colab Notebooks",
+   "mimeType": "application/vnd.google-apps.folder"
+  },
+  {
+   "kind": "drive#file",
+   "id": "0B7UBeVc5tlsGbXY5dXRRel9KMHc",
+   "name": "SysGran",
+   "mimeType": "application/vnd.google-apps.folder",
+   "resourceKey": "0-EQlD5JB-_8sTLA2dFSLf5w"
+  },
+  {
+   "kind": "drive#file",
+   "id": "0B7UBeVc5tlsGYW5RT3QxOEREQ1k",
+   "name": "Casa Ubatuba",
+   "mimeType": "application/vnd.google-apps.folder",
+   "resourceKey": "0-EXu34STh6i6VKHl2hKEanw"
+  }
+ ]
+}
+
+--------------------------------------------------------------------------------
+Request : GET https://www.googleapis.com/drive/v3/files?pageSize=3&q=mimeType+%3D+'application%2Fvnd.google-apps.folder'+and+'0B7UBeVc5tlsGYW5RT3QxOEREQ1k'+in+parents
+Headers:
+Authorization: Bearer ya29.a0ARrdaM8w7rpkRzQ5LTFZ1tYnkeEXxHtBcj7f6GDBuh8vnjlWcUeONectJdPtu475IjDYp0atLG7Wan7F2XnWxCwbyy4cK3sy_FdZBdL-A6KM73qKKp2-L5OWUebyJ3b_qocEeVl7c4ZQT_0TLx91kEDO0AOOeA
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Thu, 12 May 2022 19:46:58 GMT
+Vary: X-Origin
+Content-Type: application/json; charset=UTF-8
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self'
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+ "kind": "drive#fileList",
+ "incompleteSearch": false,
+ "files": [
+  {
+   "kind": "drive#file",
+   "id": "0B7UBeVc5tlsGOU0tLUZSbU1WZGc",
+   "name": "Ubatuba-Fotos-Casa",
+   "mimeType": "application/vnd.google-apps.folder",
+   "resourceKey": "0-HNJn5Um_LigBww8_6W1E0w"
+  },
+  {
+   "kind": "drive#file",
+   "id": "0B7UBeVc5tlsGXzRkYnVGM0taVEU",
+   "name": "Fotos - Ubatuba",
+   "mimeType": "application/vnd.google-apps.folder",
+   "resourceKey": "0-YyHTY4VdaEgO-x1KQFUC9w"
+  },
+  {
+   "kind": "drive#file",
+   "id": "0B7UBeVc5tlsGZUlnQ0RDYm1LSnM",
+   "name": "fotos - João",
+   "mimeType": "application/vnd.google-apps.folder",
+   "resourceKey": "0-Ae8H5pn29XbDtEpWKpWSPg"
+  }
+ ]
+}
+
+--------------------------------------------------------------------------------
+Request : GET https://www.googleapis.com/drive/v3/files?pageSize=3&q=mimeType+%3D+'application%2Fvnd.google-apps.folder'+and+'0B7UBeVc5tlsGZUlnQ0RDYm1LSnM'+in+parents
+Headers:
+Authorization: Bearer ya29.a0ARrdaM8w7rpkRzQ5LTFZ1tYnkeEXxHtBcj7f6GDBuh8vnjlWcUeONectJdPtu475IjDYp0atLG7Wan7F2XnWxCwbyy4cK3sy_FdZBdL-A6KM73qKKp2-L5OWUebyJ3b_qocEeVl7c4ZQT_0TLx91kEDO0AOOeA
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Thu, 12 May 2022 19:46:59 GMT
+Vary: X-Origin
+Content-Type: application/json; charset=UTF-8
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self'
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+ "kind": "drive#fileList",
+ "incompleteSearch": false,
+ "files": []
+}
+
+--------------------------------------------------------------------------------
+Request : GET https://www.googleapis.com/drive/v3/files?pageSize=3&q=mimeType+%3D+'application%2Fvnd.google-apps.folder'+and+'0B7UBeVc5tlsGXzRkYnVGM0taVEU'+in+parents
+Headers:
+Authorization: Bearer ya29.a0ARrdaM8w7rpkRzQ5LTFZ1tYnkeEXxHtBcj7f6GDBuh8vnjlWcUeONectJdPtu475IjDYp0atLG7Wan7F2XnWxCwbyy4cK3sy_FdZBdL-A6KM73qKKp2-L5OWUebyJ3b_qocEeVl7c4ZQT_0TLx91kEDO0AOOeA
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Thu, 12 May 2022 19:46:59 GMT
+Vary: X-Origin
+Content-Type: application/json; charset=UTF-8
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self'
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+ "kind": "drive#fileList",
+ "incompleteSearch": false,
+ "files": []
+}
+
+--------------------------------------------------------------------------------
+Request : GET https://www.googleapis.com/drive/v3/files?pageSize=3&q=mimeType+%3D+'application%2Fvnd.google-apps.folder'+and+'0B7UBeVc5tlsGOU0tLUZSbU1WZGc'+in+parents
+Headers:
+Authorization: Bearer ya29.a0ARrdaM8w7rpkRzQ5LTFZ1tYnkeEXxHtBcj7f6GDBuh8vnjlWcUeONectJdPtu475IjDYp0atLG7Wan7F2XnWxCwbyy4cK3sy_FdZBdL-A6KM73qKKp2-L5OWUebyJ3b_qocEeVl7c4ZQT_0TLx91kEDO0AOOeA
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Thu, 12 May 2022 19:47:00 GMT
+Vary: X-Origin
+Content-Type: application/json; charset=UTF-8
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self'
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+ "kind": "drive#fileList",
+ "incompleteSearch": false,
+ "files": []
+}
+
+--------------------------------------------------------------------------------
+Request : GET https://www.googleapis.com/drive/v3/files?pageSize=3&q=mimeType+%3D+'application%2Fvnd.google-apps.folder'+and+'0B7UBeVc5tlsGbXY5dXRRel9KMHc'+in+parents
+Headers:
+Authorization: Bearer ya29.a0ARrdaM8w7rpkRzQ5LTFZ1tYnkeEXxHtBcj7f6GDBuh8vnjlWcUeONectJdPtu475IjDYp0atLG7Wan7F2XnWxCwbyy4cK3sy_FdZBdL-A6KM73qKKp2-L5OWUebyJ3b_qocEeVl7c4ZQT_0TLx91kEDO0AOOeA
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Thu, 12 May 2022 19:47:00 GMT
+Vary: X-Origin
+Content-Type: application/json; charset=UTF-8
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self'
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+ "kind": "drive#fileList",
+ "incompleteSearch": false,
+ "files": []
+}
+
+--------------------------------------------------------------------------------
+Request : GET https://www.googleapis.com/drive/v3/files?pageSize=3&q=mimeType+%3D+'application%2Fvnd.google-apps.folder'+and+'1WVxaUQeFOvX6NMmvfud78z73qjudf_mH'+in+parents
+Headers:
+Authorization: Bearer ya29.a0ARrdaM8w7rpkRzQ5LTFZ1tYnkeEXxHtBcj7f6GDBuh8vnjlWcUeONectJdPtu475IjDYp0atLG7Wan7F2XnWxCwbyy4cK3sy_FdZBdL-A6KM73qKKp2-L5OWUebyJ3b_qocEeVl7c4ZQT_0TLx91kEDO0AOOeA
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Thu, 12 May 2022 19:47:00 GMT
+Vary: X-Origin
+Content-Type: application/json; charset=UTF-8
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self'
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+ "kind": "drive#fileList",
+ "incompleteSearch": false,
+ "files": []
+}
+
+--------------------------------------------------------------------------------
+Request : GET https://www.googleapis.com/drive/v3/files?pageSize=101720320&q=mimeType+!%3D+'application%2Fvnd.google-apps.folder'+and+'0B7UBeVc5tlsGbXY5dXRRel9KMHc'+in+parents
+Headers:
+Authorization: Bearer ya29.a0ARrdaM8w7rpkRzQ5LTFZ1tYnkeEXxHtBcj7f6GDBuh8vnjlWcUeONectJdPtu475IjDYp0atLG7Wan7F2XnWxCwbyy4cK3sy_FdZBdL-A6KM73qKKp2-L5OWUebyJ3b_qocEeVl7c4ZQT_0TLx91kEDO0AOOeA
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 400 : Bad Request
+Headers:
+Vary: X-Origin
+Content-Type: application/json; charset=UTF-8
+Date: Thu, 12 May 2022 19:47:04 GMT
+Expires: Thu, 12 May 2022 19:47:04 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self'
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalidParameter",
+    "message": "Invalid value '101720320'. Values must be within the range: [1, 1000]",
+    "locationType": "parameter",
+    "location": "pageSize"
+   }
+  ],
+  "code": 400,
+  "message": "Invalid value '101720320'. Values must be within the range: [1, 1000]"
+ }
+}
+
+--------------------------------------------------------------------------------
+Request : POST https://accounts.google.com/o/oauth2/token
+Headers:
+Content-Type:application/x-www-form-urlencoded
+Body:
+client_id=502080815718-1r1iseasap01bovrrs35rrq9053sfke9.apps.googleusercontent.com&client_secret=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&refresh_token=1%2F%2F0hyRR8V5YTQpiCgYIARAAGBESNwF-L9IrLSgBfBBUUlQM5gJZKCLusH9lj20syeit9a_scu8FdyITnCGReJpKUCqZpkPQXq6Jpo0&grant_type=refresh_token
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Date: Thu, 12 May 2022 20:06:15 GMT
+Content-Type: application/json; charset=utf-8
+Vary: X-Origin
+Vary: Referer
+Server: scaffolding on HTTPServer2
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+  "access_token": "ya29.a0ARrdaM8_-_h0irIug83Vt53wN9527N76qIuLOOpQ0vo9YO2gq60CbaP8qxfs0Zm7du5WtWx4cB9flJ7Txz4BG00qUsOXp7yYiCaWVloDFYwhPa8zft5pi0T-V3OlblNH6UxSxmXA0EQPqrB2-cbLEo3Y7h-_1Q",
+  "expires_in": 3599,
+  "scope": "https://www.googleapis.com/auth/drive",
+  "token_type": "Bearer"
+}
+--------------------------------------------------------------------------------
+Request : GET https://www.googleapis.com/drive/v3/files?pageSize=3&q=mimeType+%3D+'application%2Fvnd.google-apps.folder'+and+'root'+in+parents
+Headers:
+Authorization: Bearer ya29.a0ARrdaM8_-_h0irIug83Vt53wN9527N76qIuLOOpQ0vo9YO2gq60CbaP8qxfs0Zm7du5WtWx4cB9flJ7Txz4BG00qUsOXp7yYiCaWVloDFYwhPa8zft5pi0T-V3OlblNH6UxSxmXA0EQPqrB2-cbLEo3Y7h-_1Q
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Thu, 12 May 2022 20:06:16 GMT
+Vary: X-Origin
+Content-Type: application/json; charset=UTF-8
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self'
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+ "kind": "drive#fileList",
+ "nextPageToken": "~!!~AI9FV7T3upvzfnCCONTpRtQRN8Y-x8xo2mzTFv-GxLRBUFCIgocwncwgKJgCElRdS7YQGDvRzWYuTSx1xbvj82SWvcETsXuDo_g5IqOtgw75d84J5qG7hEZkZqUAZ5mW5-dMPXyjFQ0YoUuuUayyITyGywA9h5_StJBBURqwTyevkU79C9KsS7TtL3H0qK5QBr_O4cTKnSe6GBIaJ5SSXnilpWRY3rkqZHf72lkG-fXMOJfjh3ZQqq5YLXRFwlvhiYRy0jZ-_XL3yjI97IsXsXclIQRiUqTVtlKqjodX0f9QOveR7NbCD8Y=",
+ "incompleteSearch": false,
+ "files": [
+  {
+   "kind": "drive#file",
+   "id": "1WVxaUQeFOvX6NMmvfud78z73qjudf_mH",
+   "name": "Colab Notebooks",
+   "mimeType": "application/vnd.google-apps.folder"
+  },
+  {
+   "kind": "drive#file",
+   "id": "0B7UBeVc5tlsGbXY5dXRRel9KMHc",
+   "name": "SysGran",
+   "mimeType": "application/vnd.google-apps.folder",
+   "resourceKey": "0-EQlD5JB-_8sTLA2dFSLf5w"
+  },
+  {
+   "kind": "drive#file",
+   "id": "0B7UBeVc5tlsGYW5RT3QxOEREQ1k",
+   "name": "Casa Ubatuba",
+   "mimeType": "application/vnd.google-apps.folder",
+   "resourceKey": "0-EXu34STh6i6VKHl2hKEanw"
+  }
+ ]
+}
+
+--------------------------------------------------------------------------------
+Request : GET https://www.googleapis.com/drive/v3/files?pageSize=3&q=mimeType+%3D+'application%2Fvnd.google-apps.folder'+and+'0B7UBeVc5tlsGYW5RT3QxOEREQ1k'+in+parents
+Headers:
+Authorization: Bearer ya29.a0ARrdaM8_-_h0irIug83Vt53wN9527N76qIuLOOpQ0vo9YO2gq60CbaP8qxfs0Zm7du5WtWx4cB9flJ7Txz4BG00qUsOXp7yYiCaWVloDFYwhPa8zft5pi0T-V3OlblNH6UxSxmXA0EQPqrB2-cbLEo3Y7h-_1Q
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Thu, 12 May 2022 20:06:16 GMT
+Vary: X-Origin
+Content-Type: application/json; charset=UTF-8
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self'
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+ "kind": "drive#fileList",
+ "incompleteSearch": false,
+ "files": [
+  {
+   "kind": "drive#file",
+   "id": "0B7UBeVc5tlsGOU0tLUZSbU1WZGc",
+   "name": "Ubatuba-Fotos-Casa",
+   "mimeType": "application/vnd.google-apps.folder",
+   "resourceKey": "0-HNJn5Um_LigBww8_6W1E0w"
+  },
+  {
+   "kind": "drive#file",
+   "id": "0B7UBeVc5tlsGXzRkYnVGM0taVEU",
+   "name": "Fotos - Ubatuba",
+   "mimeType": "application/vnd.google-apps.folder",
+   "resourceKey": "0-YyHTY4VdaEgO-x1KQFUC9w"
+  },
+  {
+   "kind": "drive#file",
+   "id": "0B7UBeVc5tlsGZUlnQ0RDYm1LSnM",
+   "name": "fotos - João",
+   "mimeType": "application/vnd.google-apps.folder",
+   "resourceKey": "0-Ae8H5pn29XbDtEpWKpWSPg"
+  }
+ ]
+}
+
+--------------------------------------------------------------------------------
+Request : GET https://www.googleapis.com/drive/v3/files?pageSize=3&q=mimeType+%3D+'application%2Fvnd.google-apps.folder'+and+'0B7UBeVc5tlsGZUlnQ0RDYm1LSnM'+in+parents
+Headers:
+Authorization: Bearer ya29.a0ARrdaM8_-_h0irIug83Vt53wN9527N76qIuLOOpQ0vo9YO2gq60CbaP8qxfs0Zm7du5WtWx4cB9flJ7Txz4BG00qUsOXp7yYiCaWVloDFYwhPa8zft5pi0T-V3OlblNH6UxSxmXA0EQPqrB2-cbLEo3Y7h-_1Q
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Thu, 12 May 2022 20:06:17 GMT
+Vary: X-Origin
+Content-Type: application/json; charset=UTF-8
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self'
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+ "kind": "drive#fileList",
+ "incompleteSearch": false,
+ "files": []
+}
+
+--------------------------------------------------------------------------------
+Request : GET https://www.googleapis.com/drive/v3/files?pageSize=3&q=mimeType+%3D+'application%2Fvnd.google-apps.folder'+and+'0B7UBeVc5tlsGXzRkYnVGM0taVEU'+in+parents
+Headers:
+Authorization: Bearer ya29.a0ARrdaM8_-_h0irIug83Vt53wN9527N76qIuLOOpQ0vo9YO2gq60CbaP8qxfs0Zm7du5WtWx4cB9flJ7Txz4BG00qUsOXp7yYiCaWVloDFYwhPa8zft5pi0T-V3OlblNH6UxSxmXA0EQPqrB2-cbLEo3Y7h-_1Q
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Thu, 12 May 2022 20:06:17 GMT
+Vary: X-Origin
+Content-Type: application/json; charset=UTF-8
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self'
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+ "kind": "drive#fileList",
+ "incompleteSearch": false,
+ "files": []
+}
+
+--------------------------------------------------------------------------------
+Request : GET https://www.googleapis.com/drive/v3/files?pageSize=3&q=mimeType+%3D+'application%2Fvnd.google-apps.folder'+and+'0B7UBeVc5tlsGOU0tLUZSbU1WZGc'+in+parents
+Headers:
+Authorization: Bearer ya29.a0ARrdaM8_-_h0irIug83Vt53wN9527N76qIuLOOpQ0vo9YO2gq60CbaP8qxfs0Zm7du5WtWx4cB9flJ7Txz4BG00qUsOXp7yYiCaWVloDFYwhPa8zft5pi0T-V3OlblNH6UxSxmXA0EQPqrB2-cbLEo3Y7h-_1Q
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Thu, 12 May 2022 20:06:17 GMT
+Vary: X-Origin
+Content-Type: application/json; charset=UTF-8
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self'
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+ "kind": "drive#fileList",
+ "incompleteSearch": false,
+ "files": []
+}
+
+--------------------------------------------------------------------------------
+Request : GET https://www.googleapis.com/drive/v3/files?pageSize=3&q=mimeType+%3D+'application%2Fvnd.google-apps.folder'+and+'0B7UBeVc5tlsGbXY5dXRRel9KMHc'+in+parents
+Headers:
+Authorization: Bearer ya29.a0ARrdaM8_-_h0irIug83Vt53wN9527N76qIuLOOpQ0vo9YO2gq60CbaP8qxfs0Zm7du5WtWx4cB9flJ7Txz4BG00qUsOXp7yYiCaWVloDFYwhPa8zft5pi0T-V3OlblNH6UxSxmXA0EQPqrB2-cbLEo3Y7h-_1Q
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Thu, 12 May 2022 20:06:18 GMT
+Vary: X-Origin
+Content-Type: application/json; charset=UTF-8
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self'
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+ "kind": "drive#fileList",
+ "incompleteSearch": false,
+ "files": []
+}
+
+--------------------------------------------------------------------------------
+Request : GET https://www.googleapis.com/drive/v3/files?pageSize=3&q=mimeType+%3D+'application%2Fvnd.google-apps.folder'+and+'1WVxaUQeFOvX6NMmvfud78z73qjudf_mH'+in+parents
+Headers:
+Authorization: Bearer ya29.a0ARrdaM8_-_h0irIug83Vt53wN9527N76qIuLOOpQ0vo9YO2gq60CbaP8qxfs0Zm7du5WtWx4cB9flJ7Txz4BG00qUsOXp7yYiCaWVloDFYwhPa8zft5pi0T-V3OlblNH6UxSxmXA0EQPqrB2-cbLEo3Y7h-_1Q
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 200 : OK
+Headers:
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Thu, 12 May 2022 20:06:18 GMT
+Vary: X-Origin
+Content-Type: application/json; charset=UTF-8
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self'
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+ "kind": "drive#fileList",
+ "incompleteSearch": false,
+ "files": []
+}
+
+--------------------------------------------------------------------------------
+Request : GET https://www.googleapis.com/drive/v3/files?pageSize=-1800861440&q=mimeType+!%3D+'application%2Fvnd.google-apps.folder'+and+'0B7UBeVc5tlsGbXY5dXRRel9KMHc'+in+parents
+Headers:
+Authorization: Bearer ya29.a0ARrdaM8_-_h0irIug83Vt53wN9527N76qIuLOOpQ0vo9YO2gq60CbaP8qxfs0Zm7du5WtWx4cB9flJ7Txz4BG00qUsOXp7yYiCaWVloDFYwhPa8zft5pi0T-V3OlblNH6UxSxmXA0EQPqrB2-cbLEo3Y7h-_1Q
+Body:
+
+Trying multiple protocols.
+--------------------------------------------------------------------------------
+Response : 400 : Bad Request
+Headers:
+Vary: X-Origin
+Content-Type: application/json; charset=UTF-8
+Date: Thu, 12 May 2022 20:06:20 GMT
+Expires: Thu, 12 May 2022 20:06:20 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self'
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Accept-Ranges: none
+Vary: Origin,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Body:
+{
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalidParameter",
+    "message": "Invalid value '-1800861440'. Values must be within the range: [1, 1000]",
+    "locationType": "parameter",
+    "location": "pageSize"
+   }
+  ],
+  "code": 400,
+  "message": "Invalid value '-1800861440'. Values must be within the range: [1, 1000]"
+ }
+}
+

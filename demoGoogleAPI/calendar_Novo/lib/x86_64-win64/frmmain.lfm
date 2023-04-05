@@ -1,0 +1,148 @@
+object MainForm: TMainForm
+  Left = 456
+  Height = 546
+  Top = 191
+  Width = 937
+  Caption = 'Calendar Demo'
+  ClientHeight = 546
+  ClientWidth = 937
+  DesignTimePPI = 135
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  LCLVersion = '2.2.0.4'
+  object BFetchCalendars: TButton
+    Left = 11
+    Height = 36
+    Top = 11
+    Width = 180
+    Caption = 'Fetch calendars'
+    OnClick = BFetchCalendarsClick
+    TabOrder = 0
+  end
+  object GBAccess: TGroupBox
+    Left = 0
+    Height = 112
+    Top = 434
+    Width = 937
+    Align = alBottom
+    Caption = 'Please provide Google API access code'
+    ClientHeight = 87
+    ClientWidth = 935
+    TabOrder = 1
+    Visible = False
+    object LEAccess: TLabel
+      Left = 22
+      Height = 24
+      Top = 11
+      Width = 113
+      Caption = 'Access code'
+    end
+    object BSetAccess: TButton
+      Left = 693
+      Height = 36
+      Top = 13
+      Width = 105
+      Anchors = [akTop, akRight]
+      Caption = 'OK'
+      OnClick = BSetAccessClick
+      TabOrder = 0
+    end
+    object BCancel: TButton
+      Left = 806
+      Height = 36
+      Top = 11
+      Width = 105
+      Anchors = [akTop, akRight]
+      Caption = 'Cancel'
+      OnClick = BCancelClick
+      TabOrder = 1
+    end
+    object EAccessCode: TEdit
+      Left = 158
+      Height = 40
+      Top = 11
+      Width = 513
+      Anchors = [akTop, akLeft, akRight]
+      TabOrder = 2
+    end
+  end
+  object BFetchEvents: TButton
+    Left = 771
+    Height = 36
+    Top = 11
+    Width = 135
+    Anchors = [akTop, akRight]
+    Caption = 'Fetch Events'
+    Enabled = False
+    OnClick = BFetchEventsClick
+    TabOrder = 2
+  end
+  object LBCalendars: TListBox
+    Left = 11
+    Height = 349
+    Top = 56
+    Width = 439
+    Anchors = [akTop, akLeft, akBottom]
+    ItemHeight = 0
+    OnSelectionChange = LBCalendarsSelectionChange
+    ScrollWidth = 308
+    TabOrder = 3
+    TopIndex = -1
+  end
+  object LBEvents: TListBox
+    Left = 461
+    Height = 351
+    Top = 56
+    Width = 456
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    ItemHeight = 0
+    ScrollWidth = 320
+    TabOrder = 4
+    TopIndex = -1
+  end
+  object LEvents: TLabel
+    Left = 458
+    Height = 30
+    Top = 15
+    Width = 291
+    Anchors = [akTop, akLeft, akRight]
+    AutoSize = False
+    Caption = 'Events for calendar : <select a calendar>'
+  end
+  object Button1: TButton
+    Left = 247
+    Height = 36
+    Top = 9
+    Width = 106
+    Caption = 'Button1'
+    OnClick = Button1Click
+    TabOrder = 5
+  end
+  object Conn: TSQLite3Connection
+    Connected = False
+    LoginPrompt = True
+    KeepConnection = False
+    Transaction = Trans
+    AlwaysUseBigint = False
+    Left = 766
+    Top = 102
+  end
+  object Trans: TSQLTransaction
+    Active = False
+    Database = Conn
+    Left = 552
+    Top = 136
+  end
+  object QTemp: TSQLQuery
+    PacketRecords = -1
+    FieldDefs = <>
+    Database = Conn
+    Transaction = Trans
+    Options = [sqoAutoApplyUpdates, sqoAutoCommit]
+    Params = <>
+    Macros = <>
+    UpdateMode = upWhereAll
+    Left = 646
+    Top = 190
+  end
+end
